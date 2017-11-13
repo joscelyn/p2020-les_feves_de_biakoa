@@ -1,13 +1,5 @@
-@charset "UTF-8";
-/*!
-    Theme Name: Les fèves de Biakoa
-    Theme URI: http://les_feves_de_biakoa.com/
-    Author: P2020
-    Description: Thème réalisé pour le cours Wordpress de la P2020
-    Version: 1.0.0
-*/
 /*--------------------------------------------------------------
-# Normalize
+# Imports
 --------------------------------------------------------------*/
 /*! normalize.css v7.0.0 | MIT License | github.com/necolas/normalize.css */
 /* Document
@@ -399,3 +391,216 @@ template {
  */
 [hidden] {
   display: none; }
+
+/*--------------------------------------------------------------
+# Base
+--------------------------------------------------------------*/
+body {
+  font-family: "Palanquin", sans-serif;
+  color: #212f3f;
+  font-weight: 500;
+  background: #f3f3f3; }
+
+.container {
+  max-width: 1240px;
+  width: 90%;
+  margin: 0 auto; }
+
+.box {
+  background: #fff;
+  box-shadow: 10px 10px 33px rgba(0, 0, 0, 0.15);
+  box-sizing: border-box; }
+  .box.green {
+    background: #2ecc71; }
+
+h1, h2, h3, h4 {
+  font-family: "Palanquin Dark";
+  font-weight: 400; }
+
+p {
+  font-size: 17px;
+  line-height: 1.3; }
+
+a {
+  color: inherit;
+  transition: .3s; }
+
+.fatTitle {
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase; }
+
+.underlineTitle {
+  position: relative; }
+  .underlineTitle:after {
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: -11px;
+    left: 0;
+    width: 50px;
+    height: 4px;
+    background: #2ecc71; }
+
+.btn {
+  display: inline-block;
+  padding: 8px 24px;
+  font-family: "Palanquin Dark";
+  font-size: 16px;
+  font-weight: 700;
+  color: rgba(33, 47, 63, 0.9);
+  text-transform: uppercase;
+  border: solid 2px #2ecc71;
+  border-radius: 100px;
+  text-decoration: none;
+  transition: .3s; }
+  .btn:hover {
+    color: #fff;
+    background: #2ecc71; }
+
+.txt-center {
+  text-align: center; }
+
+/*--------------------------------------------------------------
+# Imports
+--------------------------------------------------------------*/
+.headerBackground {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 670px;
+  background: #000;
+  z-index: -1;
+  overflow: hidden; }
+  .headerBackground img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: .4; }
+
+.mainHeader .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 58px 0; }
+  .mainHeader .container img {
+    width: 280px;
+    height: auto; }
+  .mainHeader .container ul {
+    display: flex;
+    align-items: baseline;
+    list-style: none; }
+  .mainHeader .container li a {
+    position: relative;
+    display: block;
+    margin: 0 16px;
+    padding: 2px 1px;
+    font-family: "Palanquin Dark";
+    font-size: 20px;
+    color: #fff;
+    text-transform: lowercase;
+    text-decoration: none; }
+    .mainHeader .container li a:after {
+      content: "";
+      position: absolute;
+      bottom: -3px;
+      left: 0;
+      width: 100%;
+      height: 3px;
+      background: #fff;
+      border-radius: 2px;
+      transform: scale(0, 1);
+      transform-origin: top right;
+      transition: transform .3s; }
+    .mainHeader .container li a:hover:after {
+      transform: scale(1, 1);
+      transform-origin: top left; }
+  .mainHeader .container li:last-child a {
+    margin-left: 16px;
+    padding: 5px 22px 6px;
+    font-size: 14.7px;
+    font-weight: 700;
+    text-transform: uppercase;
+    border: solid 3px #fff;
+    border-radius: 100px; }
+    .mainHeader .container li:last-child a:after {
+      display: none; }
+    .mainHeader .container li:last-child a:hover {
+      color: #2ecc71;
+      background: #fff; }
+
+.headTitles {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  height: 420px;
+  width: 890px;
+  max-width: 90%;
+  margin: 0 auto; }
+  .headTitles__main {
+    text-align: center;
+    font-size: 36px;
+    color: #fff;
+    line-height: 1.35;
+    letter-spacing: 1px; }
+  .headTitles__sub {
+    margin: 0;
+    font-size: 20px;
+    color: #2ecc71;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase; }
+
+.home .headerBackground {
+  height: 820px; }
+
+.home .mainContent {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between; }
+
+.home .aboutUs, .home .donate {
+  margin-bottom: 37px; }
+  .home .aboutUs .fatTitle, .home .donate .fatTitle {
+    color: #fff;
+    text-align: center; }
+  .home .aboutUs h4, .home .donate h4 {
+    margin: 0;
+    font-size: 23px;
+    line-height: 1.3;
+    font-weight: 400; }
+  .home .aboutUs p, .home .donate p {
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 1.5; }
+
+.home .aboutUs {
+  width: 65%; }
+  .home .aboutUs .box {
+    display: flex; }
+  .home .aboutUs__text {
+    padding: 42px; }
+
+.home .donate {
+  width: 32%; }
+  .home .donate .box {
+    padding: 42px; }
+  .home .donate h4 {
+    color: #fff; }
+  .home .donate p {
+    color: #000; }
+  .home .donate .btn {
+    color: #000;
+    border-color: #fff; }
+    .home .donate .btn:hover {
+      background: #fff; }
+
+.home .theVillage {
+  padding: 48px 82px;
+  width: 100%;
+  background: #d7f2ff;
+  box-sizing: border-box; }
+  .home .theVillage .fatTitle {
+    margin: 0; }

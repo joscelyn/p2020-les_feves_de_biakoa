@@ -1,17 +1,29 @@
 <?php
 
+    /**
+     * function
+     * @private
+     * @version     0.5.1
+     * @property    undefined
+     * @package     WordPress
+     * @subpackage  firstPixel
+     * @since       0.1
+     */
+
+    define( 'THEME_PATH' ,          get_template_directory()            );
+    define( 'TEMPLATE_PATH' ,       THEME_PATH .    '/templates'        );
+
+    define( 'THEME_URL' ,           get_template_directory_uri()        );
+    define( 'IMAGES_URL' ,          THEME_URL .    '/dist/images'       );
+    define( 'JS_URL' ,              THEME_URL .    '/dist/scripts'      );
+    define( 'FAVICONS_URL' ,        THEME_URL .    '/dist/favicon'      );
+    define( 'ADMIN_IMAGES_URL' ,    IMAGES_URL .   '/admin'             );
+
+
+    // LOADING CORE FILES
+    foreach ( glob( THEME_PATH . "/inc/*.php" ) as $file ) {
+        include_once $file;
+    }
+
+    // SUPPORT THUMBNAILS
 	add_theme_support('post-thumbnails');
-
-
-
-	register_nav_menus(array(
-		'menu-1' => esc_html__('Principal', 'les_feves_de_biakoa'),
-	));
-
-
-
-	function reg_scripts() {
-		wp_enqueue_style('app', get_stylesheet_uri());
-
-	}
-	add_action('wp_enqueue_scripts', 'reg_scripts');

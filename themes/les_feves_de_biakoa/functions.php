@@ -1,15 +1,5 @@
 <?php
 
-    /**
-     * function
-     * @private
-     * @version     0.5.1
-     * @property    undefined
-     * @package     WordPress
-     * @subpackage  firstPixel
-     * @since       0.1
-     */
-
     define( 'THEME_PATH' ,          get_template_directory()            );
     define( 'TEMPLATE_PATH' ,       THEME_PATH .    '/templates'        );
 

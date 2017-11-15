@@ -7,11 +7,16 @@
     <?php
     $terms = get_the_terms(get_the_ID(), 'projectcategory');
     $count = count( $terms );
-    if ( $count > 0 ) {
-        foreach ( $terms as $term ) {
-            echo '<li>' . $term->name . '</li>';
-        }
-    }
+
+    if ( $count > 0 ):
+
+        foreach ( $terms as $term ):
+
+            echo '<li><a href="' . get_term_link($term->term_id) . '">' . $term->name . '</a></li>';
+
+        endforeach;
+
+    endif;
     ?>
 
 <?php

@@ -8,6 +8,7 @@
     define( 'JS_URL' ,              THEME_URL .    '/dist/scripts'      );
     define( 'FAVICONS_URL' ,        THEME_URL .    '/dist/favicon'      );
     define( 'ADMIN_IMAGES_URL' ,    IMAGES_URL .   '/admin'             );
+    define( 'THEME_NAME',           'biakoa' );
 
 
     // LOADING CORE FILES

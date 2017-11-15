@@ -5,12 +5,15 @@
     function addCustomPostType()
     {
 
+        $post_type = "project";
+
         $args = [
             'public'            => true,
             'label'             => 'Projets',
             'menu_position'     => 4,
             'menu_icon'         => 'dashicons-lightbulb',
             'hierarchical'      => false,
+            'post_type'         => $post_type,
             'supports'          => [
                 'title',
                 'thumbnail',
@@ -28,7 +31,7 @@
             'show_in_nav_menus'     => true,
             'publicly_queryable'    => true,
             'exclude_from_search'   => false,
-            'has_archive'           => false,
+            'has_archive'           => true,
             'query_var'             => true,
             'can_export'            => true,
             'rewrite'               => ['slug' => $post_type],

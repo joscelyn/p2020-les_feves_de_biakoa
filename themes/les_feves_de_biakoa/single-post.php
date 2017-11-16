@@ -8,7 +8,7 @@
     $count = count( $terms );
     if ( $count > 0 ) {
         foreach ( $terms as $term ) {
-            echo '<li>' . $term->name . '</li>';
+            echo '<li><a href="' . get_term_link($term->term_id) . '">' . $term->name . '</a></li>';
         }
     }
     ?>

@@ -7,7 +7,11 @@
 	<?php wp_head(); ?>
 </head>
 <body <?php body_class(); ?>>
-
+    <div>
+        <?php if ( function_exists( 'the_custom_logo' ) ) {
+            the_custom_logo();
+        } ?>
+    </div>
     <nav>
         <?php
             wp_nav_menu(array(

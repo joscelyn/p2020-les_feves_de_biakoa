@@ -38,18 +38,56 @@ body {
 
     &.green {
         background: $color;
+
+        .box__text {
+          color: black;
+
+          h4 {
+              color: white;
+          }
+        }
     }
+
+    .box__text {
+      padding: 30px;
+
+      p {
+        margin: 20px 0;
+        line-height: 1.5;
+      }
+
+    }
+
+    .box__img {
+
+      img {
+        height: 100%;
+        width: auto;
+      }
+    }
+
 }
 
 
 
-h1, h2, h3, h4 {
+h1, h2, h3, h4, h5 {
     font-family: "Palanquin Dark";
     font-weight: 400;
 }
 
+h4 {
+  color: $color;
+  font-size: 20px;
+  margin: 10px 0;
+}
+
+h5 {
+  font-size: 18px;
+  margin: 10px 0 0 0;
+}
+
 p {
-    font-size: 17px;
+    font-size: 16px;
     line-height: 1.3;
 }
 
@@ -99,6 +137,110 @@ a {
 }
 
 
+.flexRow {
+  display: flex;
+  justify-content: space-between;
+
+  &--middle {
+    align-items: center;
+  }
+
+  > :not(:first-child) {
+    margin-left: 30px;
+  }
+
+  .col-1 {
+    flex: 1;
+  }
+
+  .col-2 {
+    flex: 2;
+  }
+
+  .col-3 {
+    flex: 3;
+  }
+
+  .col-small {
+    max-width: 300px;
+  }
+}
+
+.image {
+  position: relative;
+  margin: 0;
+
+  &__img {
+
+    img {
+      margin-bottom: -3px; //bugfix
+    }
+
+  }
+
+  img {
+    max-width: 100%;
+  }
+
+  .image__caption {
+    position: relative;
+    z-index: 2;
+    width: 80%;
+    min-width: 200px;
+    max-width: 500px;
+    margin-top: -50px;
+    margin-left: 30px;
+    padding: 30px;
+    font-size: 14px;
+
+    &--big {
+      font-size: 16px;
+      line-height: 1.3;
+      padding: 40px;
+    }
+  }
+
+  &--captionSide {
+    display: flex;
+    align-items: center;
+
+    .image__img {
+      position: relative;
+      z-index: 2;
+      height: auto;
+    }
+
+    .image__caption {
+      z-index: 1;
+      margin: 0;
+      min-width: 200px;
+      margin-left: -20px;
+      padding-left: 50px;
+    }
+
+  }
+
+}
+
+
+.story {
+  background: url(../img/background.svg);
+  background-size: 100%;
+
+  font-size: 16px;
+
+  .fatTitle {
+    margin-top: 80px;
+    margin-bottom: 30px;
+  }
+
+  .box {
+    margin-bottom: 30px;
+  }
+
+}
+
+
 
 
 
@@ -111,3 +253,4 @@ a {
 --------------------------------------------------------------*/
 @import "header";
 @import "pages/home";
+@import "pages/association";

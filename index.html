@@ -23,7 +23,7 @@
                 <ul>
                     <li><a href="#">L'association</a></li>
                     <li><a href="#">Le village</a></li>
-                    <li><a href="#">Nos actions</a></li>
+                    <li class="current"><a href="#">Nos actions</a></li>
                     <li><a href="#">Actualités</a></li>
                     <li><a href="#">Faire un don</a></li>
                 </ul>
@@ -69,27 +69,79 @@
                 </div>
             </div>
 
-            <div class="theVillage">
-                <h3 class="fatTitle underlineTitle">Le village</h3>
-                <h4 class="theVillage__subTitle">Bienvenue à Biakoa</h4>
+				</div>
+			</div>
 
-                <div class="box">
-                    <h5>Les fèves de jdsoiqjd isqj disqj idj sqidjiq</h5>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis, tempore.</p>
-                    <div class="txt-center">
-                        <a href="#" class="btn">Visiter le village</a>
-                    </div>
-                </div>
+			<div class="story">
+				<div class="container">
+					<h3 class="fatTitle underlineTitle">Le village</h3>
+					<h2 class="subTitle">Bienvenue à Biakoa</h2>
 
-                <img src="http://lorempicsum.com/futurama/450/300/3" alt="">
-            </div>
-        </div>
+					<div class="flexRow flexRow--middle">
+
+						<div class="col-1">
+							<div class="box">
+								<div class="box__text">
+									<h4>Le village de Biakoa est un petit village du Cameroun, au nord de Yaoundé.</h4>
+									<p>Il ne faut pas moins de 6 heures  pour le rejoindre à partir de Yaoundé par des routes cabossées.</p>
+									<a href="village.html" class="btn">Visiter le village</a>
+								</div>
+							</div>
+							<figure class="image">
+								<div class="image__img box">
+									<img src="images/association1.jpg" alt="Image"/>
+								</div>
+							</figure>
+						</div>
+
+						<div class="col-1">
+							<figure class="image">
+								<div class="image__img box">
+									<img src="images/association1.jpg" alt="Image"/>
+								</div>
+								<figcaption class="box image__caption">
+									Le village compte près de 4 000 habitants, les jeunes sont nombreux.
+								</figcaption>
+							</figure>
+						</div>
+
+					</div>
+
+					<div class="flexRow flexRow--middle">
+
+						<div class="col-1">
+							<figure class="image">
+								<div class="image__img box">
+									<img src="images/association1.jpg" alt="Image"/>
+								</div>
+								<figcaption class="box image__caption">
+									Il y a une école primaire qui accueille 360 d’élèves dans des classes surchargées
+								</figcaption>
+							</figure>
+						</div>
+
+						<div class="col-1">
+							<figure class="map box green">
+								<div class="googleMap">
+
+								</div>
+								<figcaption class="map__caption">
+									<p>Le village est situé dans la région du Centre et le département du Mbam-et-Kim. Il fait partie de la commune de Mbangassina.</p>
+								</figcaption>
+							</figure>
+						</div>
+
+					</div>
+
+				</div>
+			</div>
     </main>
 </div>
-
-
+ 
 
 <script src="js/main.js"></script>
-	
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAGKIl64tL7_fsC0ZssSSgE3g_E1xb7qdY&callback=initMap"></script>
+
+
 </body>
 </html>

@@ -447,6 +447,7 @@ a {
   transition: .3s; }
 
 .fatTitle {
+  font-size: 20px;
   font-weight: 700;
   letter-spacing: 2px;
   text-transform: uppercase; }
@@ -478,6 +479,22 @@ a {
   .btn:hover {
     color: #fff;
     background: #2ecc71; }
+
+.titleAndLink {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 42px 0 22px; }
+  .titleAndLink a {
+    font-size: 21px;
+    color: #2ecc71;
+    font-weight: 700;
+    text-decoration: none; }
+    .titleAndLink a:hover {
+      color: #212f3f; }
+  .titleAndLink__arrow {
+    vertical-align: middle;
+    margin-left: 7px; }
 
 .flexRow {
   display: flex;
@@ -511,7 +528,7 @@ a {
     margin-top: -50px;
     margin-left: 30px;
     padding: 30px;
-    font-size: 14px; }
+    font-size: 15px; }
     .image .image__caption--big {
       font-size: 16px;
       line-height: 1.3;
@@ -680,6 +697,7 @@ a {
       background: #fff; }
 
 .home .story .subTitle {
+  font-size: 30px;
   margin-bottom: 50px; }
 
 .home .story .map img {
@@ -688,6 +706,8 @@ a {
 .home .story .map__caption {
   color: white;
   padding: 30px; }
+  .home .story .map__caption p {
+    margin: 0; }
 
 .home .story .map .googleMap {
   height: 300px; }
@@ -758,3 +778,50 @@ a {
     align-items: center; }
   .association .story .iconList img {
     margin: 20px; }
+
+.posts__cards {
+  display: flex;
+  justify-content: space-between; }
+
+.posts__card {
+  width: 31.5%; }
+  .posts__card img {
+    width: 100%;
+    height: 210px;
+    object-fit: cover; }
+  .posts__card__text {
+    padding: 0 30px 30px; }
+  .posts__card__title {
+    font-size: 26px; }
+  .posts__card .btn {
+    margin: 12px 0 0; }
+
+.projects__cards {
+  display: flex;
+  justify-content: space-between; }
+
+.projects__card {
+  width: 27%;
+  text-align: center; }
+  .projects__card img {
+    width: 60%; }
+  .projects__card__title {
+    font-size: 22px; }
+  .projects__card p {
+    color: rgba(33, 47, 63, 0.6); }
+  .projects__card .btn {
+    margin: 12px 0 0; }
+
+.partners__controls {
+  outline: none; }
+  .partners__controls span {
+    padding: 0 8px;
+    outline: none;
+    cursor: pointer;
+    transition: .3s; }
+    .partners__controls span:hover {
+      opacity: .7; }
+    .partners__controls span img {
+      outline: none; }
+    .partners__controls span:first-child img {
+      transform: rotate(180deg); }

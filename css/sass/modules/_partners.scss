@@ -1,0 +1,25 @@
+.partners {
+
+    &__controls {
+        outline: none;
+
+        span {
+            padding: 0 8px;
+            outline: none;
+            cursor: pointer;
+            transition: .3s;
+
+            &:hover {
+                opacity: .7;
+            }
+
+            img {
+                outline: none;
+            }
+
+            &:first-child img {
+                transform: rotate(180deg);
+            }
+        }
+    }
+}

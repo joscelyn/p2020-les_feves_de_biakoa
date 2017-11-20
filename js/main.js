@@ -10,3 +10,11 @@
       map: map
     });
   }
+
+
+  var slider = tns({
+      container: '.partners__slider',
+      items: 5,
+      nav: false,
+      controlsContainer: '.partners__controls'
+  });

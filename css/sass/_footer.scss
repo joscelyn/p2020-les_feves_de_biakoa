@@ -1,3 +1,75 @@
+
 .footer {
-  
+  background: $dark-lighter;
+  color: $bg;
+
+  .rowFlex {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  &__logo {
+    display: block;
+    height: 50px;
+
+    img {
+      height: 100%;
+    }
+  }
+
+  &__contact {
+    margin-left: 30px;
+  }
+
+  &__social {
+    margin-left: 30px;
+
+    &__list {
+      display: flex;
+      justify-content: space-between;
+      margin: 0; padding: 0;
+
+      li {
+        list-style: none;
+        margin-right: 10px;
+      }
+
+      img {
+        width: 30px;
+      }
+    }
+
+  }
+
+  &__links {
+    background: $dark;
+    padding: 30px;
+
+    ul {
+      padding: 0;
+      display: flex;
+      justify-content: space-around;
+
+      li {
+        list-style: none;
+
+        a {
+          color: $bg;
+        }
+      }
+    }
+  }
+
+  a {
+    color: $color;
+    text-decoration: none;
+  }
+
+  h2, h3, h4, h5 {
+    color: white;
+  }
+
 }

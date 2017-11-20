@@ -643,6 +643,51 @@ a {
     letter-spacing: 2px;
     text-transform: uppercase; }
 
+.footer {
+  background: #2C3E50;
+  color: #f3f3f3; }
+  .footer .rowFlex {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center; }
+  .footer__logo {
+    display: block;
+    height: 50px; }
+    .footer__logo img {
+      height: 100%; }
+  .footer__contact {
+    margin-left: 30px; }
+  .footer__social {
+    margin-left: 30px; }
+    .footer__social__list {
+      display: flex;
+      justify-content: space-between;
+      margin: 0;
+      padding: 0; }
+      .footer__social__list li {
+        list-style: none;
+        margin-right: 10px; }
+      .footer__social__list img {
+        width: 30px; }
+  .footer__links {
+    background: #212f3f;
+    padding: 30px; }
+    .footer__links ul {
+      padding: 0;
+      display: flex;
+      justify-content: space-around; }
+      .footer__links ul li {
+        list-style: none; }
+        .footer__links ul li a {
+          color: #f3f3f3; }
+  .footer a {
+    color: #2ecc71;
+    text-decoration: none; }
+  .footer h2, .footer h3, .footer h4, .footer h5 {
+    color: white; }
+
 .home .headerBackground {
   height: 820px; }
 

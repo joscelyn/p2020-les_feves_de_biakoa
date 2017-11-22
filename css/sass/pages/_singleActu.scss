@@ -1,0 +1,26 @@
+.singleActu {
+    padding: 40px 90px;
+
+    &__infos {
+        margin-bottom: 22px;
+        text-align: center;
+
+        &__text {
+            position: relative;
+            display: inline-block;
+            font-size: 18px;
+            color: #6c797a;
+
+            &:after {
+                content: "";
+                position: absolute;
+                display: block;
+                width: 62px;
+                height: 3px;
+                left: calc(50% - 31px);
+                bottom: -20px;
+                background: $color;
+            }
+        }
+    }
+}

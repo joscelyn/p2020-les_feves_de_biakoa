@@ -1,0 +1,34 @@
+.supportUs {
+    padding-bottom: 62px;
+    
+    &__box {
+        display: flex;
+    }
+
+    &__text {
+        padding: 42px;
+        width: 70%;
+    }
+
+    &__title {
+        font-size: 20px;
+        color: #fff;
+    }
+
+    &__paragraph {
+        margin-bottom: 24px;
+        font-size: 18px;
+        color: #000;
+        font-weight: 600;
+    }
+
+    &__img {
+        width: 30%;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+}

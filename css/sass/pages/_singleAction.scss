@@ -1,0 +1,42 @@
+.singleAction {
+
+    &__live {
+        position: relative;
+        padding: 62px 48px;
+
+        &__title {
+            position: absolute;
+            top: 42px;
+            left: -42px;
+            padding: 32px;
+            color: #fff;
+            background: $color;
+        }
+
+        &__infos {
+            display: flex;
+            align-items: center;
+        }
+
+        img {
+            width: 10%;
+            margin: 110px 8% 0 2%;
+        }
+
+        &__subTitle {
+            color: $color;
+        }
+
+        &__text {
+            width: 80%;
+        }
+    }
+
+    &__story {
+        padding-top: 48px;
+
+        .col-1:nth-child(2) {
+            flex-grow: 2;
+        }
+    }
+}

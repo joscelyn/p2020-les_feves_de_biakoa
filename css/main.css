@@ -902,6 +902,58 @@ a {
     top: -50px;
     width: 100px; }
 
+.action__item {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 32px; }
+  .action__item__title {
+    position: relative;
+    margin-right: -40px;
+    flex-shrink: 0;
+    padding: 32px;
+    color: #fff;
+    background: #2ecc71;
+    z-index: 2; }
+  .action__item__infos {
+    display: flex;
+    align-items: center;
+    padding: 62px 48px; }
+  .action__item img {
+    width: 16%;
+    margin: 0 10% 0 4%; }
+  .action__item__text {
+    width: 70%; }
+  .action__item__subTitle {
+    color: #2ecc71; }
+
+.singleAction__live {
+  position: relative;
+  padding: 62px 48px; }
+  .singleAction__live__title {
+    position: absolute;
+    top: 42px;
+    left: -42px;
+    padding: 32px;
+    color: #fff;
+    background: #2ecc71; }
+  .singleAction__live__infos {
+    display: flex;
+    align-items: center; }
+  .singleAction__live img {
+    width: 10%;
+    margin: 110px 8% 0 2%; }
+  .singleAction__live__subTitle {
+    color: #2ecc71; }
+  .singleAction__live__text {
+    width: 80%; }
+
+.singleAction__story {
+  padding-top: 48px; }
+  .singleAction__story .col-1:nth-child(2) {
+    flex-grow: 2; }
+
 .posts__cards {
   display: flex;
   justify-content: space-between; }

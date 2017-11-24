@@ -2,11 +2,11 @@
 
 <h1><?php echo $term->name; ?></h1>
 
-<?php if( have_posts() ): while( have_posts() ): the_post(); ?>
+<?php
+    if( have_posts() ): while( have_posts() ): the_post();
 
-    <li><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></li>
+        get_template_part( 'templates/misc/article' );
 
-    <?php
     endwhile;
     else:
     ?>

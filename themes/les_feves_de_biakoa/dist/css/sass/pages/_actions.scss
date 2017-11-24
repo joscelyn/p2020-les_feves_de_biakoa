@@ -1,0 +1,39 @@
+.action {
+
+    &__item {
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 32px;
+
+        &__title {
+            position: relative;
+            margin-right: -40px;
+            flex-shrink: 0;
+            padding: 32px;
+            color: #fff;
+            background: $color;
+            z-index: 2;
+        }
+
+        &__infos {
+            display: flex;
+            align-items: center;
+            padding: 62px 48px;
+        }
+
+        img {
+            width: 16%;
+            margin: 0 10% 0 4%;
+        }
+
+        &__text {
+            width: 70%;
+        }
+
+        &__subTitle {
+            color: $color;
+        }
+    }
+}

@@ -72,7 +72,7 @@ gulp.task('style', function () {
 		.pipe(sass())
 		.pipe(autoprefixer())
 		.pipe(cssmin())
-		.pipe(gulp.dest('./prod/css'));
+		.pipe(gulp.dest('./style.css'));
 });
 
 gulp.task('imagemin', function () {

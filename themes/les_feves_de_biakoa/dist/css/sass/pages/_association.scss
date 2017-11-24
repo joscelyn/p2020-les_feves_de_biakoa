@@ -1,0 +1,109 @@
+.association {
+
+  .aboutUs {
+    margin-top: 0px;
+    margin-bottom: 50px;
+
+    .fatTitle {
+      color: white;
+    }
+
+    .box__img {
+      height: 240px;
+    }
+
+  }
+
+  .keyPoints {
+    .fatTitle {
+      margin-bottom: 0;
+    }
+  }
+
+  .portrait {
+
+    img {
+      max-width: 100%;
+    }
+
+    &__caption {
+      padding: 30px;
+
+      p {
+        font-size: 14px;
+      }
+    }
+
+  }
+
+  .timeline {
+    padding: 30px;
+    position: relative;
+
+    ::after {
+      content: "";
+      display: block;
+      position: absolute;
+      z-index: 0;
+      left: 120px;
+      top: 100px;
+      bottom: 50px;
+      border-left: 3px solid $color;
+    }
+
+    li {
+      position: relative;
+      z-index: 1;
+      display: flex;
+
+      .circle {
+        flex-shrink: 0;
+        height: 100px;
+        width: 100px;
+        border-radius: 50%;
+        border: 2px solid $color;
+        background: white;
+        margin-right: 50px;
+        margin-bottom: 20px;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        span {
+          display: block;
+
+          &.month {
+            text-transform: uppercase;
+            font-weight: bold;
+          }
+          &.year {
+            font-size: 20px;
+            color: $color;
+          }
+        }
+      }
+    }
+  }
+
+  .story {
+
+    .iconList {
+      padding: 0;
+      margin: 0;
+
+      li {
+        list-style: none;
+        display: flex;
+        align-items: center;
+      }
+
+      img {
+        margin: 20px;
+      }
+
+    }
+
+  }
+
+}

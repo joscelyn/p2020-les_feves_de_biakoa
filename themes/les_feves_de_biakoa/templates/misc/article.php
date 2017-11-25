@@ -2,15 +2,24 @@
     <?php the_post_thumbnail(); ?>
     <?php
 
-        $terms = get_the_terms(get_the_ID(), 'category');
-        $count = count( $terms );
+        $postType = get_post_type(get_the_ID());
 
+        if($postType == "post")
+        {
+            $taxonomyType = "category";
+        }else if($postType == "project")
+        {
+            $taxonomyType = "projectcategory";
+        }
+
+        $terms = get_the_terms(get_the_ID(), $taxonomyType);
+        $count = count( $terms );
     ?>
     <div class="posts__card__text">
-        <h3 class="posts__card__title"><?php the_title(); ?></h3>
+        <h3 class="posts__card__title"><?php the_title(); ?> - <?php echo $postType; ?></h3>
         <?php
 
-            if ( $count > 0 ):
+            if ($terms):
 
                 foreach ( $terms as $term ):
 

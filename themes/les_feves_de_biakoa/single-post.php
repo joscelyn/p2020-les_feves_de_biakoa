@@ -51,7 +51,7 @@ else:
             <div class="container">
                 <div class="titleAndLink">
                     <h2 class="fatTitle">Actualités</h2>
-                    <a href="#">Toutes les actualités <img class="titleAndLink__arrow" src="img/arrow.svg"></a>
+                    <a href="<?php echo get_permalink( get_page_by_path( 'nos-actualites' ) ); ?>">Toutes les actualités <img class="titleAndLink__arrow" src="img/arrow.svg"></a>
                 </div>
 
                 <div class="posts__cards">

@@ -563,7 +563,7 @@ a {
 .story {
   font-size: 16px; }
 .story--bg {
-  background: url(../img/background.svg);
+  background: url(dist/img/background.svg);
   background-size: 100%; }
 .story .fatTitle {
   margin-top: 80px;

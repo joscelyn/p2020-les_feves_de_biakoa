@@ -1,0 +1,30 @@
+.projects {
+
+    &__cards {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        display: none;
+    }
+
+    &__card {
+        width: 27%;
+        text-align: center;
+
+        img {
+            width: 60%;
+        }
+
+        &__title {
+            font-size: 22px;
+        }
+
+        p {
+            color: rgba($dark, .6);
+        }
+
+        .btn {
+            margin: 12px 0 0;
+        }
+    }
+}

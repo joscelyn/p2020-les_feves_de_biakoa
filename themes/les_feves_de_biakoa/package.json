@@ -4,6 +4,7 @@
   "description": "Site personnel",
   "author": "Joscelyn Gainié <joscelyngainie.fr>",
   "devDependencies": {
+    "browserslist": "latest",
     "gulp": "^3.9.1",
     "gulp-autoprefixer": "latest",
     "gulp-cssmin": "latest",
@@ -12,7 +13,6 @@
     "gulp-rename": "latest",
     "gulp-sass": "latest",
     "gulp-webserver": "latest",
-    "imagemin-pngquant": "latest",
-    "browserslist": "latest"
+    "imagemin-pngquant": "latest"
   }
 }

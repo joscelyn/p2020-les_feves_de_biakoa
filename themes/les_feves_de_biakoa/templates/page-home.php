@@ -24,14 +24,13 @@ Template Name: Home
                             </div>
                         </div>
                         <div class="aboutUs__img">
-                            <img style="" src="<?php // the_field('section_2_village_image_1'); ?>">
+                            <img style="height: 400px;" src="<?php  the_field('section_1_description_image'); ?>">
                         </div>
                     </div>
                 </div>
 
                 <div class="donate">
                     <h2 class="fatTitle"><?php echo the_field('section_1_don_titre');?></h2>
-
                     <div class="box green">
                         <h4><?php echo the_field('section_1_don_sous_titre');?></h4>
                         <p><?php echo the_field('section_1_don_texte');?></p>
@@ -44,12 +43,14 @@ Template Name: Home
 
                 <div class="story story--bg">
                     <div class="container">
-                        <h3 class="fatTitle underlineTitle"><?php echo the_field('section_2_village_titre');?></h3>
-                        <h2 class="subTitle"><?php echo the_field('section_2_village_sous_titre');?></h2>
+<!--                        <h3 class="fatTitle underlineTitle">--><?php //echo the_field('section_2_village_titre');?><!--</h3>-->
+<!--                        <h2 class="subTitle">--><?php //echo the_field('section_2_village_sous_titre');?><!--</h2>-->
 
                         <div class="flexRow flexRow--middle">
 
                             <div class="col-1">
+                                <h3 class="fatTitle underlineTitle"><?php echo the_field('section_2_village_titre');?></h3>
+                                <h2 class="subTitle"><?php echo the_field('section_2_village_sous_titre');?></h2>
                                 <div class="box">
                                     <div class="box__text">
                                         <h4>Le village de Biakoa est un petit village du Cameroun, au nord de Yaoundé.</h4>
@@ -64,24 +65,6 @@ Template Name: Home
                                         <img style="height:auto;" src="<?php the_field('section_2_village_image_1'); ?>">
                                     </div>
                                 </figure>
-                            </div>
-
-                            <div class="col-1">
-                                <figure class="image">
-                                    <div class="image__img box">
-                                        <img style="height:auto;" src="<?php the_field('section_2_village_image_2'); ?>">
-                                    </div>
-                                    <figcaption class="box image__caption">
-                                        <?php echo the_field('section_2_village_image_2_legende'); ?>
-                                    </figcaption>
-                                </figure>
-                            </div>
-
-                        </div>
-
-                        <div class="flexRow flexRow--middle">
-
-                            <div class="col-1">
                                 <figure class="image">
                                     <div class="image__img box">
                                         <img style="height:auto;" src="<?php the_field('section_2_village_image_3'); ?>">
@@ -93,6 +76,15 @@ Template Name: Home
                             </div>
 
                             <div class="col-1">
+                                <figure class="image">
+                                    <div class="image__img box">
+                                        <img style="height:auto;" src="<?php the_field('section_2_village_image_2'); ?>">
+                                    </div>
+                                    <figcaption class="box image__caption">
+                                        <?php echo the_field('section_2_village_image_2_legende'); ?>
+                                    </figcaption>
+                                </figure>
+
                                 <figure class="map box green">
                                     <div class="googleMap">
 
@@ -102,6 +94,32 @@ Template Name: Home
                                     </figcaption>
                                 </figure>
                             </div>
+
+                        </div>
+
+                        <div class="flexRow flexRow--middle">
+
+<!--                            <div class="col-1">-->
+<!--                                <figure class="image">-->
+<!--                                    <div class="image__img box">-->
+<!--                                        <img style="height:auto;" src="--><?php //the_field('section_2_village_image_3'); ?><!--">-->
+<!--                                    </div>-->
+<!--                                    <figcaption class="box image__caption">-->
+<!--                                        --><?php //echo the_field('section_2_village_image_3_legende'); ?>
+<!--                                    </figcaption>-->
+<!--                                </figure>-->
+<!--                            </div>-->
+
+<!--                            <div class="col-1">-->
+<!--                                <figure class="map box green">-->
+<!--                                    <div class="googleMap">-->
+<!---->
+<!--                                    </div>-->
+<!--                                    <figcaption class="map__caption">-->
+<!--                                        <p>Le village est situé dans la région du Centre, dans le département du Mbam-et-Kim. Il fait partie de la commune de Mbangassina.</p>-->
+<!--                                    </figcaption>-->
+<!--                                </figure>-->
+<!--                            </div>-->
 
                         </div>
 
@@ -116,41 +134,35 @@ Template Name: Home
                             </div>
 
                             <div class="posts__cards">
+
+                                <?php
+                                    $args=array(
+                                        'post_type' => 'post',
+                                        'posts_per_page' => 3,
+                                        'orderby' => 'date',
+                                        'order'   => 'DESC',
+                                    );
+                                    $the_query = new WP_Query( $args );
+                                ?>
+
+                            <?php if ( $the_query->have_posts() ) : while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
+
                                 <div class="posts__card box">
-                                    <img src="<?= THEME_URL ?>/dist/images/association1.jpg" alt="dsqdsq">
+                                    <?php the_post_thumbnail(); ?>
 
                                     <div class="posts__card__text">
-                                        <h3 class="posts__card__title">Lorem machin</h3>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste, quaerat quam. Aliquid, deserunt esse inventore iusto nostrum obcaecati quod tempore.</p>
+                                        <h3 class="posts__card__title"><?php the_title(); ?></h3>
+                                        <p><?php the_excerpt(); ?></p>
                                         <div class="txt-center">
-                                            <a class="btn" href="#">En savoir plus</a>
+                                            <a class="btn" href="<?php the_permalink(); ?>">En savoir plus</a>
                                         </div>
                                     </div>
                                 </div>
 
-                                <div class="posts__card box">
-                                    <img src="<?= THEME_URL ?>/dist/images/association1.jpg" alt="dsqdsq">
+                            <?php endwhile; else: ?>
+                                <p>Sorry, no posts matched your criteria.</p>
+                            <?php endif; ?>
 
-                                    <div class="posts__card__text">
-                                        <h3 class="posts__card__title">Lorem machin</h3>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste, quaerat quam. Aliquid, deserunt esse inventore iusto nostrum obcaecati quod tempore.</p>
-                                        <div class="txt-center">
-                                            <a class="btn" href="#">En savoir plus</a>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="posts__card box">
-                                    <img src="<?= THEME_URL ?>/dist/images/association1.jpg" alt="dsqdsq">
-
-                                    <div class="posts__card__text">
-                                        <h3 class="posts__card__title">Lorem machin</h3>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste, quaerat quam. Aliquid, deserunt esse inventore iusto nostrum obcaecati quod tempore.</p>
-                                        <div class="txt-center">
-                                            <a class="btn" href="#">En savoir plus</a>
-                                        </div>
-                                    </div>
-                                </div>
                             </div>
                         </div>
                     </div>
@@ -164,29 +176,30 @@ Template Name: Home
                             </div>
 
                             <div class="projects__cards">
-                                <div class="projects__card">
-                                    <img src="<?= THEME_URL ?>/dist/img/book.svg" alt="dsqdsq">
 
-                                    <h3 class="projects__card__title">Lorem machin</h3>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste, quaerat quam. Aliquid, deserunt esse inventore iusto nostrum obcaecati quod tempore.</p>
-                                    <a class="btn" href="#">Lorem ipsum dolor</a>
-                                </div>
+                                <?php
+                                $args=array(
+                                    'post_type' => 'project',
+                                    'posts_per_page' => 3,
+                                    'orderby' => 'date',
+                                    'order'   => 'DESC',
+                                );
+                                $the_query = new WP_Query( $args );
+                                ?>
 
-                                <div class="projects__card">
-                                    <img src="<?= THEME_URL ?>/dist/img/book.svg" alt="dsqdsq">
-
-                                    <h3 class="projects__card__title">Lorem machin</h3>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste, quaerat quam. Aliquid, deserunt esse inventore iusto nostrum obcaecati quod tempore.</p>
-                                    <a class="btn" href="#">Lorem ipsum dolor</a>
-                                </div>
+                                <?php if ( $the_query->have_posts() ) : while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
 
                                 <div class="projects__card">
-                                    <img src="<?= THEME_URL ?>/dist/img/book.svg" alt="dsqdsq">
+                                    <?php the_post_thumbnail(); ?>
 
-                                    <h3 class="projects__card__title">Lorem machin</h3>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste, quaerat quam. Aliquid, deserunt esse inventore iusto nostrum obcaecati quod tempore.</p>
-                                    <a class="btn" href="#">Lorem ipsum dolor</a>
+                                    <h3 class="projects__card__title"><?php the_title(); ?></h3>
+                                    <p><?php the_excerpt(); ?></p>
+                                    <a class="btn" href="<?php the_permalink(); ?>">Découvrir</a>
                                 </div>
+
+                                <?php endwhile; else: ?>
+                                    <p>Sorry, no posts matched your criteria.</p>
+                                <?php endif; ?>
 
                             </div>
                         </div>
@@ -204,30 +217,25 @@ Template Name: Home
                             </div>
 
                             <div class="partners__slider">
+
+                                <?php
+                            $args=array(
+                                'post_type' => 'partenaire',
+                                'orderby' => 'date',
+                                'order'   => 'DESC',
+                            );
+                            $the_query = new WP_Query( $args );
+                            ?>
+
+                            <?php if ( $the_query->have_posts() ) : while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
                                 <div class="partners__slider__item">
-                                    <img src="<?= THEME_URL ?>/dist/images/toyota.jpg" alt="dsqdsqdsq">
+                                    <?php the_post_thumbnail(); ?>
                                 </div>
-                                <div class="partners__slider__item">
-                                    <img src="<?= THEME_URL ?>/dist/images/toyota.jpg" alt="dsqdsqdsq">
-                                </div>
-                                <div class="partners__slider__item">
-                                    <img src="<?= THEME_URL ?>/dist/images/toyota.jpg" alt="dsqdsqdsq">
-                                </div>
-                                <div class="partners__slider__item">
-                                    <img src="<?= THEME_URL ?>/dist/images/toyota.jpg" alt="dsqdsqdsq">
-                                </div>
-                                <div class="partners__slider__item">
-                                    <img src="<?= THEME_URL ?>/dist/images/toyota.jpg" alt="dsqdsqdsq">
-                                </div>
-                                <div class="partners__slider__item">
-                                    <img src="<?= THEME_URL ?>/dist/images/toyota.jpg" alt="dsqdsqdsq">
-                                </div>
-                                <div class="partners__slider__item">
-                                    <img src="<?= THEME_URL ?>/images/toyota.jpg" alt="dsqdsqdsq">
-                                </div>
-                                <div class="partners__slider__item">
-                                    <img src="<?= THEME_URL ?>/dist/images/toyota.jpg" alt="dsqdsqdsq">
-                                </div>
+
+                            <?php endwhile; else: ?>
+                                <p>Sorry, no posts matched your criteria.</p>
+                            <?php endif; ?>
+
                             </div>
                         </div>
                     </div>

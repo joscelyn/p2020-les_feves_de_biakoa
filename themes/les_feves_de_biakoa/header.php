@@ -12,7 +12,7 @@
 <body class="home" <?php body_class(); ?>>
 
 <div class="headerBackground">
-    <img src="<?php echo IMAGES_URL ?>/home.jpg" alt="">
+    <img src="<?php the_post_thumbnail(); ?>" alt="">
 </div>
 
 <div class="content">
@@ -25,10 +25,9 @@
                 the_custom_logo();
             }
 
-            // CUSTOM MENU
+            // CUSTOM MENU HEADER
             wp_nav_menu( array (
-                'theme_location' => 'menu-1',
-                'menu_id'        => 'primary-menu',
+                'theme_location' => 'menu-header',
                 'container'      => 'nav',
             ));
             ?>

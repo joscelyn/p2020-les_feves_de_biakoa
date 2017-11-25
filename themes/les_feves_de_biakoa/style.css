@@ -677,9 +677,13 @@ a {
   align-items: center; }
 .footer__logo {
   display: block;
-  height: 50px; }
+  height: auto;
+  width: 280px;
+}
 .footer__logo img {
-  height: 100%; }
+  width:100%;
+  height: auto;
+   }
 .footer__contact {
   margin-left: 30px; }
 .footer__social {

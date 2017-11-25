@@ -3,10 +3,23 @@
     <div class="container">
 
         <div class="rowFlex">
-            <a href="" class="footer__logo">
-                <img src="img/logo.png" alt="Les Fèves de Biakoa">
-            </a>
+            <div class="footer__logo">
+                <?php
+                    if ( function_exists( 'the_custom_logo' ) ) {
+                        the_custom_logo();
+                    }
+                ?>
+            </div>
             <div class="footer__contact">
+
+                <?php
+                // 'Sidebar Footer' = Sidebar name or id
+                if ( is_active_sidebar( 'Footer widget' ) ) { ?>
+                <ul id="sidebar">
+                    <?php dynamic_sidebar( 'Footer widget' ); ?>
+                </ul>
+                <?php } ?>
+
                 <h3>Contactez-nous !</h3>
                 <p>Des questions, des projets, des remarques ? <br/> Contactez Sylvie par courriel : <a href="mailto:test@test.st">test@test.st</a></p>
             </div>
@@ -27,16 +40,19 @@
         </div>
 
     </div>
-    <div class="footer__links">
-        <ul class="container">
-            <li><a href="#">L'association</a></li>
-            <li><a href="#">Le village</a></li>
-            <li><a href="#">Nos actions</a></li>
-            <li><a href="#">Actualités</a></li>
-            <li><a href="#">Faire un don</a></li>
-            <li><a href="#">Mentions légales</a></li>
-        </ul>
-    </div>
+
+    <?php
+
+    // CUSTOM MENU HEADER
+    wp_nav_menu( array (
+        'theme_location' => 'menu-footer',
+        'container'      => 'div',
+        'container_class'=> 'footer__links',
+        'items_wrap'     => '<ul class="container">%3$s</ul>',
+    ));
+
+    ?>
+
 </footer>
 
 <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAGKIl64tL7_fsC0ZssSSgE3g_E1xb7qdY&callback=initMap"></script>

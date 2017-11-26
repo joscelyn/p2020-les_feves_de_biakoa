@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the WordPress - 4.9.x - Development - Administration package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2017-11-15 07:33:50+0000\n"
+"PO-Revision-Date: 2017-11-21 15:38:11+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -208,7 +208,7 @@ msgstr "De meilleures instructions de menu pour moins de confusion"
 
 #: wp-admin/about.php:156
 msgid "When you switch themes, widgets sometimes think they can just up and move location. Improvements in WordPress 4.9 offer more persistent menu and widget placement when you decide it&#8217;s time for a new theme. Additionally, you can preview installed themes or download, install, and preview new themes right. Nothing says handy like being able to preview before you deploy. "
-msgstr "Lorsque vous changez de thème, les widgets pensent parfois qu’ils peuvent juste monter et changer d’emplacement. Les améliorations apportées à WordPress 4.9 offrent un positionnement plus persistant des menus et des widgets lorsque vous décidez qu’il est temps d’utiliser un nouveau thème. De plus, vous pouvez prévisualiser les thèmes installés ou télécharger, installer et prévisualiser les nouveaux thèmes. Rien n’est plus pratique que de pouvoir prévisualiser avant de se lancer."
+msgstr "Lorsque vous changez de thème, les widgets peuvent parfois changer d’emplacement de façon aléatoire. Les améliorations apportées à WordPress 4.9 offrent un positionnement plus persistant des menus et des widgets lorsque vous décidez qu’il est temps d’utiliser un nouveau thème. De plus, vous pouvez prévisualiser les thèmes installés ou télécharger, installer et prévisualiser les nouveaux thèmes. Rien n’est plus pratique que de pouvoir prévisualiser avant de se lancer."
 
 #: wp-admin/about.php:140
 msgid "Want to add media to your text widget? Embed images, video, and audio directly into the widget along with your text, with our simple but useful Add Media button. Woo!"
@@ -3908,7 +3908,7 @@ msgstr "Mise à jour de la traduction de %1$s (%2$s)&#8230;"
 #: wp-admin/includes/class-language-pack-upgrader-skin.php:29
 #: wp-admin/update-core.php:433 wp-admin/update-core.php:756
 msgid "Update Translations"
-msgstr "Mise à jour des traductions"
+msgstr "Mettre à jour les traductions"
 
 #: wp-admin/includes/update-core.php:1022
 msgid "There is not enough free disk space to complete the update."

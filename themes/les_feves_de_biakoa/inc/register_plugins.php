@@ -1,16 +1,11 @@
 <?php
 
 function theme_slug_widgets_init() {
-    $args = array(
-        'name' => __('Sidebar Footer %d'),
-        'id'   => 'sidebar-footer',
-        'description' => '',
-        'class' => '',
-        'before_widget' => '<li id="%1$s" class="widget %2$s">',
-        'after_widget' => '</li>',
-        'before_title' => '<h2 class="widgettitle">',
-        'after_title' => '</h2>' );
 
-    register_sidebars(2, $args);
+    register_sidebar(array(
+       'name'           => __( 'Sidebar Footer', get_template() ),
+       'id'             => 'sidebar-footer',
+       'description'    => __('Ce widget est dédié à l\'affichage du formulaire de contact dans le footer')
+    ));
 }
 add_action( 'widgets_init', 'theme_slug_widgets_init' );

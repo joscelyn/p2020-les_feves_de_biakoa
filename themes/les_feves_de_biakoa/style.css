@@ -1026,3 +1026,34 @@ a {
   width: 100%;
   height: 100%;
   object-fit: cover; }
+.footer__contact li {
+  list-style: none;
+}
+.footer__contact input, .footer__contact textarea {
+  background: none;
+  border: 1px solid white;
+  padding: 10px;
+  outline-style: none;
+  width: 100%;
+  display: block;
+  color: white;
+}
+.footer__contact input[type=submit]{
+  cursor: pointer;
+  background-color: white;
+  border-radius: 100px;
+  font-weight: bold;
+  width: 150px;
+  color: #2C3E50;
+  transition: 0.15s;
+}
+
+.footer__contact input[type=submit]:hover {
+  background-color: #2C3E50;
+  color: white;
+}
+
+.footer__contact textarea {
+  height: 70px;
+}
+

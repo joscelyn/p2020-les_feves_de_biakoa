@@ -27,7 +27,7 @@
 
             // CUSTOM MENU
             wp_nav_menu( array (
-                'theme_location' => 'menu-1',
+                'theme_location' => 'menu-header',
                 'menu_id'        => 'primary-menu',
                 'container'      => 'nav',
             ));

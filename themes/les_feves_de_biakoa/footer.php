@@ -5,23 +5,28 @@
 
         <div class="rowFlex">
             <a href="" class="footer__logo">
-                <img src="img/logo.png" alt="Les Fèves de Biakoa">
+                <?php if ( function_exists( 'custom_logo_setup' ) ): ?>
+
+                    <img src="" alt="">
+
+                <?php endif; ?>
             </a>
             <div class="footer__contact">
-                <h3>Contactez-nous !</h3>
-                <p>Des questions, des projets, des remarques ? <br/> Contactez Sylvie par courriel : <a href="mailto:test@test.st">test@test.st</a></p>
+
+                <?php get_sidebar( 'Sidebar Footer 1' ); ?>
+
             </div>
             <div class="footer__social">
                 <h3>Suivez-nous !</h3>
                 <ul class="footer__social__list">
                     <li>
-                        <a href="http://facebook.com"><img src="img/facebook.svg" alt="Facebook"></a>
+                        <a href="<?php echo get_option('facebook');?>" target="_blank"><img src="<?php bloginfo('template_url'); ?>/dist/img/facebook.svg" alt="Facebook"></a>
                     </li>
                     <li>
-                        <a href="http://twitter.com"><img src="img/twitter.svg" alt="Twitter"></a>
+                        <a href="<?php echo get_option('twitter');?>" target="_blank"><img src="<?php bloginfo('template_url'); ?>/dist/img/twitter.svg" alt="Twitter"></a>
                     </li>
                     <li>
-                        <a href="http://instagram.com"><img src="img/instagram.svg" alt="Insta"></a>
+                        <a href="<?php echo get_option('instagram');?>" target="_blank"><img src="<?php bloginfo('template_url'); ?>/dist/img/instagram.svg" alt="Insta"></a>
                     </li>
                 </ul>
             </div>
@@ -29,14 +34,14 @@
 
     </div>
     <div class="footer__links">
-        <ul class="container">
-            <li><a href="#">L'association</a></li>
-            <li><a href="#">Le village</a></li>
-            <li><a href="#">Nos actions</a></li>
-            <li><a href="#">Actualités</a></li>
-            <li><a href="#">Faire un don</a></li>
-            <li><a href="#">Mentions légales</a></li>
-        </ul>
+        <?php
+
+            wp_nav_menu( array (
+                'theme_location' => 'menu-footer',
+                'container'      => 'nav',
+            ));
+
+        ?>
     </div>
 </footer>
 

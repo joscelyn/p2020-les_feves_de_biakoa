@@ -22,6 +22,34 @@
 
   &__contact {
     margin-left: 30px;
+
+    .form {
+
+      &__group {
+        margin-bottom: 10px;
+      }
+
+      label, input[type=email], textarea {
+        display: block;
+        padding: 8px 4px;
+        border-radius: 8px;
+      }
+
+      input[type=email], textarea {
+        width: 100%;
+        background: $bg;
+        max-width: 300px;
+        border: 2px solid $dark-lighter;
+
+        &:focus {
+          border-color: $color;
+          outline: none;
+        }
+
+      }
+
+    }
+
   }
 
   &__social {

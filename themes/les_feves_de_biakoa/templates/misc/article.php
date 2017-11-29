@@ -1,5 +1,5 @@
 <article class="posts__card box">
-    <?php the_post_thumbnail(); ?>
+    <img src="<?php echo get_the_post_thumbnail_url(); ?>" alt="">
     <?php
 
         $postType = get_post_type(get_the_ID());
@@ -13,7 +13,6 @@
         }
 
         $terms = get_the_terms(get_the_ID(), $taxonomyType);
-        $count = count( $terms );
     ?>
     <div class="posts__card__text">
         <h3 class="posts__card__title"><?php the_title(); ?> - <?php echo $postType; ?></h3>

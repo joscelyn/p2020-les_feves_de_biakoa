@@ -13,9 +13,9 @@
             <h1>Paramètres</h1>
             <form action="options.php" method="post">
                 <?php
-                settings_fields('section');
-                do_settings_sections('theme-options');
-                submit_button();
+                    settings_fields('section');
+                    do_settings_sections('theme-options');
+                    submit_button();
                 ?>
 
             </form>

@@ -17,6 +17,8 @@ function post_function($postType) {
     // The Query
     $the_query = new WP_Query( $args );
 
+    $max_paged = $the_query->max_num_pages;
+
     // The Loop
     if ( $the_query->have_posts() ) {
 
@@ -27,8 +29,11 @@ function post_function($postType) {
 
         /* Restore original Post Data */
         wp_reset_postdata();
+
     } else {
+
         // no posts found
+
     }
 
 }

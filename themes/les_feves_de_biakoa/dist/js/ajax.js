@@ -1,10 +1,10 @@
-console.log("ok");
 jQuery(document).ready(function($){
 
     $(".button_more .button").on("click", function(e){
         e.preventDefault();
-        current_page ++;
-        var ajax_section =$(".articles_list"); // zone ou renvoyer le contenu de l'AJAX
+        current_page = 1;
+        current_page++;
+        var ajax_section =$(".posts__cards"); // zone ou renvoyer le contenu de l'AJAX
         jQuery.post(
             ajaxurl, // url du fichier admin-ajax.php,
             {

@@ -32,14 +32,14 @@ Template Name: Association
                     <div class="flexRow flexRow--middle">
 
                         <div class="col-small">
-                            <figure class="portrait box">
+                            <div class="portrait box">
                                 <img width="" src="<?php the_field('section_2_profil_image'); ?>">
                                 <figcaption class="portrait__caption">
                                     <h5><?php the_field('section_2_profil_nom'); ?></h5>
                                     <p><?php the_field('section_2_profil_sous_titre'); ?></p>
                                     <p><?php the_field('section_2_profil_description'); ?></p>
                                 </figcaption>
-                            </figure>
+                            </div>
                         </div>
 
                         <div class="col-2">
@@ -116,10 +116,10 @@ Template Name: Association
                             </div>
                             <div class="box">
                                 <div class="box__text">
-                                    <blockquote>
+                                    <div>
                                         <p><?php the_field('section_4_decouverte_citation_texte'); ?></p>
                                         <p class="author"><?php the_field('section_4_decouverte_citation_auteur'); ?></p>
-                                    </blockquote>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -140,13 +140,13 @@ Template Name: Association
                     <div class="flexRow flexRow--middle">
 
                         <div class="col-small">
-                            <figure class="portrait box">
+                            <div class="portrait box">
                                 <img src="<?php the_field('section_4_decouverte_profil_image'); ?>" alt="Image"/>
                                 <figcaption class="portrait__caption">
                                     <h5><?php the_field('section_4_decouverte_profil_nom'); ?></h5>
                                     <p><?php the_field('section_4_decouverte_profil_sous_titre'); ?></p>
                                 </figcaption>
-                            </figure>
+                            </div>
                         </div>
 
                         <div class="col-1">

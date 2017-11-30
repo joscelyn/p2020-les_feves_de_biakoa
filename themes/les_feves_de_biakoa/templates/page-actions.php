@@ -1,6 +1,5 @@
 <?php
 /*
-<<<<<<< HEAD
 Template Name: Page Nos Actions
 */
 

@@ -5,7 +5,6 @@
     if( have_posts() ): while( have_posts() ): the_post();
 
     $terms = get_the_terms(get_the_ID(), 'category');
-    $count = count( $terms );
 
 ?>
 
@@ -14,7 +13,7 @@
             <h2 class="headTitles__sub">
                 <?php
 
-                if ( $count > 0 ) {
+                if ( !is_bool($terms) ) {
                     foreach ( $terms as $term ) {
                         echo '<a href="' . get_term_link($term->term_id) . '">' . $term->name . '</a> ';
                     }

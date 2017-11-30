@@ -23,6 +23,11 @@
 
     <?php }
 
+    function setting_paypal() { ?>
+        <input type="email" name="setting_paypal" id="setting_paypal"
+               value="<?php echo get_option('setting_paypal');?>"/>
+    <?php }
+
     function setting_facebook() { ?>
         <input type="text" name="facebook" id="facebook"
                value="<?php echo get_option('facebook');?>"/>
@@ -62,6 +67,7 @@
 
     function custom_settings_page_setup() {
         add_settings_section('section', '', null, 'theme-options');
+        add_settings_field('setting_paypal', 'Adresse Paypal', 'setting_paypal', 'theme-options', 'section');
         add_settings_field('facebook', 'Facebook URL', 'setting_facebook', 'theme-options', 'section');
         add_settings_field('instagram', 'Instagram URL', 'setting_instagram', 'theme-options', 'section');
         add_settings_field('twitter', 'Twitter URL', 'setting_twitter', 'theme-options', 'section');
@@ -70,6 +76,7 @@
         add_settings_field('setting_adress', 'Adresse', 'setting_adress', 'theme-options', 'section');
         add_settings_field('setting_googlemap', 'Iframe Google Map', 'setting_googlemap', 'theme-options', 'section');
 
+        register_setting('section', 'setting_paypal');
         register_setting('section', 'setting_phone');
         register_setting('section', 'setting_adress');
         register_setting('section', 'setting_googlemap');

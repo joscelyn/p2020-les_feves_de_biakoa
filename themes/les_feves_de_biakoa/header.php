@@ -5,11 +5,15 @@
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <title>Les fèves de Biakoa</title>
 
+
+
     <?php wp_head(); ?>
-    <link href="<?php echo THEME_URL ?>/style.css" rel="stylesheet">
+
+    <link href="<?php echo THEME_STYLE ?>" rel="stylesheet">
+
 </head>
 
-<body class="home" <?php body_class(); ?>>
+<body class="<?php echo $slug = basename(get_permalink()); ?>" <?php body_class(); ?>>
 
 <div class="headerBackground">
     <img src="<?php the_post_thumbnail(); ?>" alt="">

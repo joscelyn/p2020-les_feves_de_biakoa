@@ -78,6 +78,7 @@ function addCustomPostType()
     register_post_type('project', $args);
 }
 add_action('init', 'addCustomPostType');
+
 // ADD PROJECTS TAXONOMY
 $taxonomy = "projectcategory";
 $object_type = ["project"];

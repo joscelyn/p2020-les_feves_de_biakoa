@@ -31,10 +31,10 @@
                     <div class="singleActu__infos">
                         <h2 class="singleActu__infos__text">Par <?php echo get_the_author(); ?> le <?php the_date(); ?></h2>
                     </div>
-
                     <div class="singleActu__content">
                         <p><?php the_content(); ?></p>
                     </div>
+                    <?php get_template_part('templates/misc/section-comments'); ?>
                 </div>
             </div>
         </div>

@@ -14,7 +14,9 @@ get_header(); ?>
     <div class="posts">
         <div class="container">
             <div class="posts__cards">
-                <?php post_function('post'); ?>
+                <?php
+                    post_function('post');
+                ?>
             </div>
             <div class="container">
                 <div class="row button_more">
@@ -25,11 +27,11 @@ get_header(); ?>
     </div>
 
     <script type="text/javascript">
-        var max_paged = <?= $the_query->max_num_pages; ?>;
+        var max_paged = <?= $max_paged; ?>;
     </script>
 
 
-    <?php get_template_part( 'templates/misc/section_supportus' ); ?>
+    <?php get_template_part( 'templates/misc/section-supportus' ); ?>
 </main>
 
 

@@ -17,13 +17,12 @@ function post_function($postType) {
     // The Query
     $the_query = new WP_Query( $args );
 
-    $max_paged = $the_query->max_num_pages;
-
     // The Loop
     if ( $the_query->have_posts() ) {
 
         while ( $the_query->have_posts() ) {
             $the_query->the_post();
+            $GLOBALS['max_paged'] = $the_query->max_num_pages;
             get_template_part('templates/misc/article');
         }
 

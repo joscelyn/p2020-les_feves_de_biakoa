@@ -51,7 +51,15 @@
                 <h2 class="subTitle">Comment sont répartis les <?php echo get_field( "budget"); ?> €</h2>
 
                 <div class="flexRow flexRow--middle">
-                    <div class="col-1">
+                    <?php
+                        $youtubeLink = get_field('youtube_link');
+                        if($youtubeLink){
+
+                            echo '<div class="col-1">';
+
+                        }else echo '<div class="col-12">';
+                    ?>
+
                         <figure class="image">
                             <div class="image__img box">
                                 <img src="
@@ -67,13 +75,21 @@
                             </figcaption>
                         </figure>
                     </div>
+                    <?php if($youtubeLink): ?>
 
-                    <div class="col-1">
-                        youtube
-                    </div>
+                        <div class="col-1">
+                            <iframe width="100%" height="300" src="https://www.youtube.com/embed/<?php echo apply_filters('youtube_url_filter', $youtubeLink); ?>?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+                        </div>
+
+                    <?php endif; ?>
+
                 </div>
             </div>
         </div>
+
+            <div class="singleAction__live container box">
+                <?php get_template_part('templates/misc/section-comments'); ?>
+            </div>
 
         <?php
             endwhile;

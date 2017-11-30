@@ -24,17 +24,6 @@
         wp_register_style('style',  THEME_URL.'/style.css');
         wp_enqueue_style('style');
 
-        $cdn = array(
-            'foundation' => 'https://cdnjs.cloudflare.com/ajax/libs/foundation/6.3.1/js/foundation.min.js',
-        );
-        // from here, do not touch
-        // -------------------------------------------------
-        $dependencies = array();
-        foreach ($cdn as $name => $url) {
-            wp_enqueue_script( $name, $url, array( 'jquery' ), null, true );
-            $dependencies[] = $name;
-        }
-
         // ajax
         wp_enqueue_script('ajaxScript', JS_URL. '/ajax.js', array('jquery'), false, true);
         wp_enqueue_script('ajaxScript');

@@ -24,7 +24,7 @@
     <?php }
 
     function setting_paypal() { ?>
-        <input type="email" name="setting_paypal" id="setting_paypal"
+        <input type="text" name="setting_paypal" id="setting_paypal"
                value="<?php echo get_option('setting_paypal');?>"/>
     <?php }
 

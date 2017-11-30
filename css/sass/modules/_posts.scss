@@ -11,11 +11,18 @@
 
     &__card {
         margin-right: 30px;
+        min-width: 300px;
 
         @include small {
             max-width: 400px;
             margin: auto;
             margin-bottom: 30px;
+        }
+
+        @include medium-only {
+            &:nth-child(3n+3) {
+                display: none;
+            }
         }
 
         &:last-child {
@@ -30,9 +37,26 @@
             width: 100%;
             height: 210px;
             object-fit: cover;
+            margin-bottom: 30px;
 
             @include small {
 
+            }
+        }
+
+        li {
+            display: inline-block;
+
+            &:not(:last-of-type)::after {
+                content: " • ";
+                font-weight: 700;
+            }
+
+            a {
+                text-decoration: none;
+                text-transform: uppercase;
+                font-weight: 700;
+                color: $color;
             }
         }
 

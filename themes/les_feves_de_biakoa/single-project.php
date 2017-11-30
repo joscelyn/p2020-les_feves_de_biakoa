@@ -14,10 +14,10 @@
                         echo '<a href="' . get_term_link($term->term_id) . '">' . $term->name . '</a>';
 
                     endforeach;
-
+                    wp_reset_query();
                 else:
 
-                    echo "Actualité";
+                    echo "Actions";
 
                 endif;
                 ?>
@@ -47,11 +47,11 @@
         </div>
 
 
-        <div class="story story--bg actions__story">
-            <div class="container">
-                <h2 class="subTitle">Comment sont répartis les <?php echo get_field( "budget"); ?> €</h2>
+            <div class="story story--bg actions__story">
+                <div class="container">
+                    <h2 class="subTitle">Comment sont répartis les <?php echo get_field( "budget"); ?> €</h2>
 
-                <div class="flexRow flexRow--middle">
+                    <div class="flexRow flexRow--middle">
                     <?php
                         $youtubeLink = get_field('youtube_link');
                         if($youtubeLink){
@@ -84,10 +84,10 @@
 
                 </div>
             </div>
-        </div>
+
 
             <div class="singleAction__live container box">
-                <?php get_template_part('templates/misc/section-comments'); ?>
+                <?php get_template_part('templates/misc/section_comments'); ?>
             </div>
 
         <?php

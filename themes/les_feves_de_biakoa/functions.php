@@ -17,5 +17,4 @@
         include_once $file;
     }
 
-    // SUPPORT THUMBNAILS
-	add_theme_support('post-thumbnails');
+

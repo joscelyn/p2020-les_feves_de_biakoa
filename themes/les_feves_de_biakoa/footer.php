@@ -50,7 +50,6 @@
     </div>
 </footer>
 
-<!--<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAGKIl64tL7_fsC0ZssSSgE3g_E1xb7qdY&callback=initMap"></script>-->
 
 
 </body>

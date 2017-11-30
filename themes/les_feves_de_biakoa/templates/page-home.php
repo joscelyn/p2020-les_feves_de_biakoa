@@ -86,14 +86,14 @@
                                     </figcaption>
                                 </figure>
 
-                                <figure class="map box green">
+                                <div class="map box green">
                                     <div class="googleMap">
                                         <?php get_template_part('templates/misc/map') ?>
                                     </div>
                                     <figcaption class="map__caption">
                                         <p>Le village est situé dans la région du Centre, dans le département du Mbam-et-Kim. Il fait partie de la commune de Mbangassina.</p>
                                     </figcaption>
-                                </figure>
+                                </div>
                             </div>
 
                         </div>
@@ -181,7 +181,7 @@
                                 <?php if ( $the_query->have_posts() ) : while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
 
                                 <div class="projects__card">
-                                    <?php the_post_thumbnail(); ?>
+                                    <img src="<?php echo get_the_post_thumbnail_url(get_the_ID(), 'icon'); ?>" alt="">
 
                                     <h3 class="projects__card__title"><?php the_title(); ?></h3>
                                     <p><?php the_excerpt(); ?></p>

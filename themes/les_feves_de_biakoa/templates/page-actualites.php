@@ -32,7 +32,7 @@ get_header(); ?>
     </script>
 
 
-    <?php get_template_part( 'templates/misc/section-supportus' ); ?>
+    <?php get_template_part( 'templates/misc/section_supportus' ); ?>
 </main>
 
 

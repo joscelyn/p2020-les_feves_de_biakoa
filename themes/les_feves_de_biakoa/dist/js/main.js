@@ -18,4 +18,3 @@ var slider = tns({
     nav: false,
     controlsContainer: '.partners__controls'
 });
-console.log(slider)

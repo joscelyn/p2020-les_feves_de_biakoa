@@ -1,6 +1,11 @@
+<<<<<<< HEAD
 <?php
 /*
 Template Name: Page Contact
+=======
+<?php /*
+Template Name: Contact
+>>>>>>> dev-etienne
 */
 ?>
 

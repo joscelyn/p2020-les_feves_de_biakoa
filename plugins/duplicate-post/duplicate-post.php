@@ -4,10 +4,14 @@
  Plugin URI: https://duplicate-post.lopo.it/
  Description: Clone posts and pages.
 <<<<<<< HEAD
+<<<<<<< HEAD
  Version: 3.2
 =======
  Version: 3.2.1
 >>>>>>> dev-josselin
+=======
+ Version: 3.2.1
+>>>>>>> dev-etienne
  Author: Enrico Battocchi
  Author URI: https://lopo.it
  Text Domain: duplicate-post

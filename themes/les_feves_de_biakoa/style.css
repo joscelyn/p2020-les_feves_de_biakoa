@@ -677,13 +677,30 @@ a {
   align-items: center; }
 .footer__logo {
   display: block;
-  height: auto;
-  width: 280px;
-}
+  height: auto; }
 .footer__logo img {
-  width:100%;
-  height: auto;
-   }
+  height: 100%; }
+.footer__contact {
+  margin-left: 30px; }
+.footer__contact .form__group {
+  margin-bottom: 10px; }
+.footer__contact .form label, .footer__contact .form input[type=email], .footer__contact .form textarea {
+  display: block;
+  padding: 8px 4px;
+  border-radius: 8px; }
+.footer__contact .form input[type=email], .footer__contact .form textarea {
+  width: 100%;
+  background: #f3f3f3;
+  max-width: 300px;
+  border: 2px solid #2C3E50; }
+.footer__contact .form input[type=email]:focus, .footer__contact .form textarea:focus {
+  border-color: #2ecc71;
+  outline: none; }
+.footer__social {
+  margin-left: 30px; }
+.footer__social__list {
+
+}
 .footer__contact {
   margin-left: 30px; }
 .footer__social {

@@ -1,4 +1,5 @@
 <article class="posts__card box">
+
     <img src="<?php echo get_the_post_thumbnail_url(); ?>" alt="">
     <?php
 
@@ -34,4 +35,5 @@
             <a class="btn" href="<?php the_permalink(); ?>">En savoir plus</a>
         </div>
     </div>
+
 </article>

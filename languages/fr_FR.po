@@ -3,10 +3,14 @@
 msgid ""
 msgstr ""
 <<<<<<< HEAD
+<<<<<<< HEAD
 "PO-Revision-Date: 2017-11-15 19:49:43+0000\n"
 =======
 "PO-Revision-Date: 2017-11-27 06:06:25+0000\n"
 >>>>>>> dev-josselin
+=======
+"PO-Revision-Date: 2017-11-27 06:06:25+0000\n"
+>>>>>>> dev-etienne
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -794,20 +798,28 @@ msgstr "La récupération de la vérification du nonce a échoué. Veuillez rée
 #. translators: Site admin email change notification email subject. %s: Site
 #. title
 <<<<<<< HEAD
+<<<<<<< HEAD
 #: wp-includes/functions.php:5770
 =======
 #: wp-includes/functions.php:5771
 >>>>>>> dev-josselin
+=======
+#: wp-includes/functions.php:5771
+>>>>>>> dev-etienne
 msgid "[%s] Notice of Admin Email Change"
 msgstr "[%s] Notification de changement de l’e-mail d’administration"
 
 #. translators: Do not translate OLD_EMAIL, NEW_EMAIL, SITENAME, SITEURL: those
 #. are placeholders.
 <<<<<<< HEAD
+<<<<<<< HEAD
 #: wp-includes/functions.php:5755
 =======
 #: wp-includes/functions.php:5756
 >>>>>>> dev-josselin
+=======
+#: wp-includes/functions.php:5756
+>>>>>>> dev-etienne
 msgid ""
 "Hi,\n"
 "\n"
@@ -860,10 +872,14 @@ msgid "Back to theme sources"
 msgstr "Retour vers les sources du thème"
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 #: wp-includes/functions.php:5698
 =======
 #: wp-includes/functions.php:5699
 >>>>>>> dev-josselin
+=======
+#: wp-includes/functions.php:5699
+>>>>>>> dev-etienne
 msgid "Only UUID V4 is supported at this time."
 msgstr "Seul le système UUID v4 est reconnu à l’heure actuelle."
 
@@ -3862,10 +3878,14 @@ msgid "Edit Menu"
 msgstr "Modifier le menu"
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 #: wp-includes/wp-db.php:1849 wp-includes/wp-db.php:1855
 =======
 #: wp-includes/wp-db.php:1856 wp-includes/wp-db.php:1862
 >>>>>>> dev-josselin
+=======
+#: wp-includes/wp-db.php:1856 wp-includes/wp-db.php:1862
+>>>>>>> dev-etienne
 msgid "Unable to retrieve the error message from MySQL"
 msgstr "Impossible de retrouver le message d’erreur depuis MYSQL"
 
@@ -4164,10 +4184,14 @@ msgid "Choose logo"
 msgstr "Choisir le logo"
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 #: wp-includes/functions.php:5311
 =======
 #: wp-includes/functions.php:5312
 >>>>>>> dev-josselin
+=======
+#: wp-includes/functions.php:5312
+>>>>>>> dev-etienne
 msgid "Close dialog"
 msgstr "Fermez la boîte de dialogue"
 
@@ -4178,10 +4202,14 @@ msgstr "Aucun logo sélectionné"
 #. translators: 1: PHP class name, 2: PHP parent class name, 3: version number,
 #. 4: __construct() method
 <<<<<<< HEAD
+<<<<<<< HEAD
 #: wp-includes/functions.php:3899
 =======
 #: wp-includes/functions.php:3900
 >>>>>>> dev-josselin
+=======
+#: wp-includes/functions.php:3900
+>>>>>>> dev-etienne
 msgid "The called constructor method for %1$s in %2$s is <strong>deprecated</strong> since version %3$s! Use %4$s instead."
 msgstr "La méthode du constructeur appelée pour %1$s dans %2$s est <strong>obsolète</strong> depuis la version %3$s ! Utilisez %4$s à la place."
 
@@ -4312,19 +4340,27 @@ msgid "Read the <a href=\"%s\" target=\"_blank\">bug report</a> page. Some of th
 msgstr "Lisez la <a href=\"%s\" target=\"_blank\">page des rapports de bug</a>. Elle contient des bonnes pratiques qui peuvent vous permettre de comprendre ce qui ne marche pas."
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 #: wp-includes/functions.php:4142
 =======
 #: wp-includes/functions.php:4143
 >>>>>>> dev-josselin
+=======
+#: wp-includes/functions.php:4143
+>>>>>>> dev-etienne
 msgid "https://codex.wordpress.org/Debugging_in_WordPress"
 msgstr "https://codex.wordpress.org/Debugging_in_WordPress"
 
 #. translators: %s: Codex URL
 <<<<<<< HEAD
+<<<<<<< HEAD
 #: wp-includes/functions.php:4141
 =======
 #: wp-includes/functions.php:4142
 >>>>>>> dev-josselin
+=======
+#: wp-includes/functions.php:4142
+>>>>>>> dev-etienne
 msgid "Please see <a href=\"%s\">Debugging in WordPress</a> for more information."
 msgstr "Veuillez lire <a href=\"%s\">Débugger dans WordPress</a> (en) pour plus d’informations."
 
@@ -4534,14 +4570,19 @@ msgid "Author:"
 msgstr "Auteur :"
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 #: wp-includes/wp-db.php:1737
 =======
 #: wp-includes/wp-db.php:1744
 >>>>>>> dev-josselin
+=======
+#: wp-includes/wp-db.php:1744
+>>>>>>> dev-etienne
 msgid "Error reconnecting to the database"
 msgstr "Erreur de reconnexion à la base de données"
 
 #. translators: %s: database host
+<<<<<<< HEAD
 <<<<<<< HEAD
 #: wp-includes/wp-db.php:1741
 msgid "This means that we lost contact with the database server at %s. This could mean your host&#8217;s database server is down."
@@ -4555,6 +4596,13 @@ msgstr "Cela signifie que nous avons perdu le contact avec le serveur de base de
 
 #: wp-includes/wp-db.php:1754
 >>>>>>> dev-josselin
+=======
+#: wp-includes/wp-db.php:1748
+msgid "This means that we lost contact with the database server at %s. This could mean your host&#8217;s database server is down."
+msgstr "Cela signifie que nous avons perdu le contact avec le serveur de base de données à l’adresse %s. Cela peut signifier que le serveur de votre base de données ne fonctionne plus."
+
+#: wp-includes/wp-db.php:1754
+>>>>>>> dev-etienne
 msgid "Are you sure that the database server is not under particularly heavy load?"
 msgstr "Confirmez-vous que le serveur de la base de données n’est pas en train de plier sous le nombre de requêtes ?"
 
@@ -4563,19 +4611,27 @@ msgid "Are you sure that you have typed the correct hostname?"
 msgstr "Confirmez-vous avoir saisi le bon nom d’hôte (hostname) ?"
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 #: wp-includes/wp-db.php:1596 wp-includes/wp-db.php:1746
 =======
 #: wp-includes/wp-db.php:1596 wp-includes/wp-db.php:1753
 >>>>>>> dev-josselin
+=======
+#: wp-includes/wp-db.php:1596 wp-includes/wp-db.php:1753
+>>>>>>> dev-etienne
 msgid "Are you sure that the database server is running?"
 msgstr "Confirmez-vous que le serveur de la base de données fonctionne correctement ?"
 
 #. translators: %s: support forums URL
 <<<<<<< HEAD
+<<<<<<< HEAD
 #: wp-includes/wp-db.php:1601 wp-includes/wp-db.php:1752
 =======
 #: wp-includes/wp-db.php:1601 wp-includes/wp-db.php:1759
 >>>>>>> dev-josselin
+=======
+#: wp-includes/wp-db.php:1601 wp-includes/wp-db.php:1759
+>>>>>>> dev-etienne
 msgid "If you&#8217;re unsure what these terms mean you should probably contact your host. If you still need help you can always visit the <a href=\"%s\">WordPress Support Forums</a>."
 msgstr "Si vous n’êtes pas sûr de connaître ces termes, vous devriez probablement contacter votre hébergeur. Si vous avez toujours besoin d’aide, vous pouvez toujours vous rendre sur les <a href=\"%s\">forums d’entraide de WordPress</a>."
 
@@ -5208,10 +5264,14 @@ msgstr "Ajouter ou retirer des éléments de menu"
 
 #. translators: 1: PHP class name, 2: version number, 3: __construct() method
 <<<<<<< HEAD
+<<<<<<< HEAD
 #: wp-includes/functions.php:3903
 =======
 #: wp-includes/functions.php:3904
 >>>>>>> dev-josselin
+=======
+#: wp-includes/functions.php:3904
+>>>>>>> dev-etienne
 msgid "The called constructor method for %1$s is <strong>deprecated</strong> since version %2$s! Use %3$s instead."
 msgstr "La méthode constructor appelée pour %1$s est <strong>obsolète</strong> depuis la version %2$s ! Veuillez utiliser %3$s à la place."
 
@@ -7283,10 +7343,14 @@ msgstr "Cellule d’en-tête"
 #: wp-includes/update.php:345 wp-includes/update.php:523
 #: wp-includes/wp-db.php:1069 wp-includes/wp-db.php:1602
 <<<<<<< HEAD
+<<<<<<< HEAD
 #: wp-includes/wp-db.php:1753 wp-login.php:882
 =======
 #: wp-includes/wp-db.php:1760 wp-login.php:882
 >>>>>>> dev-josselin
+=======
+#: wp-includes/wp-db.php:1760 wp-login.php:882
+>>>>>>> dev-etienne
 msgid "https://wordpress.org/support/"
 msgstr "https://wpfr.net/support/"
 
@@ -7329,37 +7393,53 @@ msgid "Previously uploaded"
 msgstr "Précédemment téléversé"
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 #: wp-includes/general-template.php:3908
 =======
 #: wp-includes/general-template.php:3910
 >>>>>>> dev-josselin
+=======
+#: wp-includes/general-template.php:3910
+>>>>>>> dev-etienne
 msgctxt "admin color scheme"
 msgid "Sunrise"
 msgstr "Lever du soleil"
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 #: wp-includes/general-template.php:3914
 =======
 #: wp-includes/general-template.php:3916
 >>>>>>> dev-josselin
+=======
+#: wp-includes/general-template.php:3916
+>>>>>>> dev-etienne
 msgctxt "admin color scheme"
 msgid "Ectoplasm"
 msgstr "Ectoplasme"
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 #: wp-includes/general-template.php:3920
 =======
 #: wp-includes/general-template.php:3922
 >>>>>>> dev-josselin
+=======
+#: wp-includes/general-template.php:3922
+>>>>>>> dev-etienne
 msgctxt "admin color scheme"
 msgid "Ocean"
 msgstr "Océan"
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 #: wp-includes/general-template.php:3926
 =======
 #: wp-includes/general-template.php:3928
 >>>>>>> dev-josselin
+=======
+#: wp-includes/general-template.php:3928
+>>>>>>> dev-etienne
 msgctxt "admin color scheme"
 msgid "Coffee"
 msgstr "Café"
@@ -7425,19 +7505,27 @@ msgid "no-subset"
 msgstr "no-subset"
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 #: wp-includes/general-template.php:3879
 =======
 #: wp-includes/general-template.php:3881
 >>>>>>> dev-josselin
+=======
+#: wp-includes/general-template.php:3881
+>>>>>>> dev-etienne
 msgctxt "admin color scheme"
 msgid "Default"
 msgstr "Par défaut"
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 #: wp-includes/general-template.php:3902
 =======
 #: wp-includes/general-template.php:3904
 >>>>>>> dev-josselin
+=======
+#: wp-includes/general-template.php:3904
+>>>>>>> dev-etienne
 msgctxt "admin color scheme"
 msgid "Midnight"
 msgstr "Minuit"
@@ -7447,10 +7535,14 @@ msgid "Use commas instead of %s to separate excluded terms."
 msgstr "Utilisez des virgules au lieu de %s pour séparer les termes exclus."
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 #: wp-includes/general-template.php:3890
 =======
 #: wp-includes/general-template.php:3892
 >>>>>>> dev-josselin
+=======
+#: wp-includes/general-template.php:3892
+>>>>>>> dev-etienne
 msgctxt "admin color scheme"
 msgid "Light"
 msgstr "Lumineux"
@@ -7644,10 +7736,14 @@ msgid "The site you were looking for, %s, does not exist, but you can create it 
 msgstr "Le site que vous cherchez %s n’existe pas, mais vous pouvez le créer dès à présent !"
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 #: wp-includes/functions.php:5328
 =======
 #: wp-includes/functions.php:5329
 >>>>>>> dev-josselin
+=======
+#: wp-includes/functions.php:5329
+>>>>>>> dev-etienne
 msgid "The login page will open in a new window. After logging in you can close it and return to this page."
 msgstr "La page de connexion s’ouvrira dans une nouvelle fenêtre. Après votre connexion, vous pourrez la fermer et revenir à cette page."
 
@@ -7673,10 +7769,14 @@ msgid "Search for:"
 msgstr "Rechercher :"
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 #: wp-includes/functions.php:5326 wp-includes/script-loader.php:568
 =======
 #: wp-includes/functions.php:5327 wp-includes/script-loader.php:568
 >>>>>>> dev-josselin
+=======
+#: wp-includes/functions.php:5327 wp-includes/script-loader.php:568
+>>>>>>> dev-etienne
 msgid "Session expired"
 msgstr "La session a expiré"
 
@@ -8676,14 +8776,19 @@ msgid "Support Forums"
 msgstr "Forums d’entraide"
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 #: wp-includes/formatting.php:3361 wp-includes/general-template.php:3798
+=======
+#: wp-includes/formatting.php:3361 wp-includes/general-template.php:3800
+>>>>>>> dev-etienne
 msgid "&hellip;"
 msgstr "&hellip;"
 
-#: wp-includes/functions.php:3772
+#: wp-includes/functions.php:3773
 msgid "Database Error"
 msgstr "Erreur de la base de données"
 
+<<<<<<< HEAD
 #: wp-includes/functions.php:3776 wp-includes/ms-load.php:455
 =======
 #: wp-includes/formatting.php:3361 wp-includes/general-template.php:3800
@@ -8696,6 +8801,9 @@ msgstr "Erreur de la base de données"
 
 #: wp-includes/functions.php:3777 wp-includes/ms-load.php:455
 >>>>>>> dev-josselin
+=======
+#: wp-includes/functions.php:3777 wp-includes/ms-load.php:455
+>>>>>>> dev-etienne
 #: wp-includes/wp-db.php:1584
 msgid "Error establishing a database connection"
 msgstr "Erreur lors de la connexion à la base de données"
@@ -8749,10 +8857,14 @@ msgid "This file is not an image. Please try another."
 msgstr "Ce fichier n’est pas une image. Veuillez en envoyer un autre."
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 #: wp-includes/general-template.php:3896
 =======
 #: wp-includes/general-template.php:3898
 >>>>>>> dev-josselin
+=======
+#: wp-includes/general-template.php:3898
+>>>>>>> dev-etienne
 msgctxt "admin color scheme"
 msgid "Blue"
 msgstr "Bleu"
@@ -8878,20 +8990,28 @@ msgstr "Cet utilisateur est déjà activé."
 
 #. translators: %s: version number
 <<<<<<< HEAD
+<<<<<<< HEAD
 #: wp-includes/functions.php:4138
 =======
 #: wp-includes/functions.php:4139
 >>>>>>> dev-josselin
+=======
+#: wp-includes/functions.php:4139
+>>>>>>> dev-etienne
 msgid "(This message was added in version %s.)"
 msgstr "(Ce message a été ajouté à la version %s.)"
 
 #. translators: Developer debugging message. 1: PHP function name, 2:
 #. Explanatory message, 3: Version information message
 <<<<<<< HEAD
+<<<<<<< HEAD
 #: wp-includes/functions.php:4145
 =======
 #: wp-includes/functions.php:4146
 >>>>>>> dev-josselin
+=======
+#: wp-includes/functions.php:4146
+>>>>>>> dev-etienne
 msgid "%1$s was called <strong>incorrectly</strong>. %2$s %3$s"
 msgstr "%1$s est appelée de la mauvaise manière. %2$s %3$s"
 
@@ -10040,6 +10160,7 @@ msgstr "Pas de nom de fichier"
 
 #. translators: %s: site name
 <<<<<<< HEAD
+<<<<<<< HEAD
 #: wp-includes/functions.php:2594
 msgid "You are attempting to log out of %s"
 msgstr "Vous êtes en train de vous déconnecter de %s."
@@ -10052,6 +10173,13 @@ msgstr "Vous êtes en train de vous déconnecter de %s."
 
 #: wp-includes/functions.php:4714 wp-includes/functions.php:4718
 >>>>>>> dev-josselin
+=======
+#: wp-includes/functions.php:2595
+msgid "You are attempting to log out of %s"
+msgstr "Vous êtes en train de vous déconnecter de %s."
+
+#: wp-includes/functions.php:4714 wp-includes/functions.php:4718
+>>>>>>> dev-etienne
 msgid "UTC"
 msgstr "UTC"
 
@@ -10685,10 +10813,14 @@ msgid "Entries <abbr title=\"Really Simple Syndication\">RSS</abbr>"
 msgstr "Flux <abbr title=\"Really Simple Syndication\">RSS</abbr> des articles"
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 #: wp-includes/functions.php:4721
 =======
 #: wp-includes/functions.php:4722
 >>>>>>> dev-josselin
+=======
+#: wp-includes/functions.php:4722
+>>>>>>> dev-etienne
 msgid "Manual Offsets"
 msgstr "Décalages manuels"
 
@@ -10729,6 +10861,7 @@ msgid "Get your own %s account in seconds"
 msgstr "Obtenez votre propre compte %s en quelques secondes"
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 #: wp-includes/functions.php:2610 wp-includes/ms-functions.php:2047
 msgid "Please try again."
 msgstr "Veuillez réessayer."
@@ -10741,6 +10874,13 @@ msgstr "Veuillez réessayer."
 
 #: wp-includes/functions.php:5328 wp-includes/user.php:285
 >>>>>>> dev-josselin
+=======
+#: wp-includes/functions.php:2611 wp-includes/ms-functions.php:2047
+msgid "Please try again."
+msgstr "Veuillez réessayer."
+
+#: wp-includes/functions.php:5328 wp-includes/user.php:285
+>>>>>>> dev-etienne
 msgid "Please log in again."
 msgstr "Veuillez vous reconnecter."
 
@@ -10833,10 +10973,14 @@ msgid "Select Category"
 msgstr "Sélectionner une catégorie"
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 #: wp-includes/functions.php:4668
 =======
 #: wp-includes/functions.php:4669
 >>>>>>> dev-josselin
+=======
+#: wp-includes/functions.php:4669
+>>>>>>> dev-etienne
 msgid "Select a city"
 msgstr "Sélectionner une ville"
 
@@ -10910,10 +11054,14 @@ msgstr "%s [Version actuelle]"
 
 #. translators: %s: logout URL
 <<<<<<< HEAD
+<<<<<<< HEAD
 #: wp-includes/functions.php:2601
 =======
 #: wp-includes/functions.php:2602
 >>>>>>> dev-josselin
+=======
+#: wp-includes/functions.php:2602
+>>>>>>> dev-etienne
 msgid "Do you really want to <a href=\"%s\">log out</a>?"
 msgstr "Voulez-vous réellement <a href=\"%s\">vous déconnecter</a> ?"
 
@@ -11141,10 +11289,14 @@ msgstr "<strong>ERREUR</strong> : votre compte a été marqué comme étant ind
 #. translators: 1: WordPress version number, 2: Minimum required MySQL version
 #. number
 <<<<<<< HEAD
+<<<<<<< HEAD
 #: wp-includes/wp-db.php:3311
 =======
 #: wp-includes/wp-db.php:3318
 >>>>>>> dev-josselin
+=======
+#: wp-includes/wp-db.php:3318
+>>>>>>> dev-etienne
 msgid "<strong>ERROR</strong>: WordPress %1$s requires MySQL %2$s or higher"
 msgstr "<strong>ERREUR</strong> : WordPress %1$s requiert MySQL %2$s ou une version supérieure."
 
@@ -11181,10 +11333,14 @@ msgid "Image description"
 msgstr "Description de l’image"
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 #: wp-includes/functions.php:2615
 =======
 #: wp-includes/functions.php:2616
 >>>>>>> dev-josselin
+=======
+#: wp-includes/functions.php:2616
+>>>>>>> dev-etienne
 msgid "WordPress Failure Notice"
 msgstr "Avertissement d’échec de WordPress"
 
@@ -11266,10 +11422,14 @@ msgid "If you do not activate your username within two days, you will have to si
 msgstr "Si vous n’activez pas votre compte sous deux jours, vous devrez vous réinscrire."
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 #: wp-includes/functions.php:2747 wp-load.php:92
 =======
 #: wp-includes/functions.php:2748 wp-load.php:92
 >>>>>>> dev-josselin
+=======
+#: wp-includes/functions.php:2748 wp-load.php:92
+>>>>>>> dev-etienne
 msgid "WordPress &rsaquo; Error"
 msgstr "WordPress » Erreur"
 
@@ -11284,10 +11444,14 @@ msgstr "Que dois-je faire maintenant ?"
 #. translators: 1: PHP function name, 2: version number, 3: optional message
 #. regarding the change
 <<<<<<< HEAD
+<<<<<<< HEAD
 #: wp-includes/functions.php:4029
 =======
 #: wp-includes/functions.php:4030
 >>>>>>> dev-josselin
+=======
+#: wp-includes/functions.php:4030
+>>>>>>> dev-etienne
 msgid "%1$s was called with an argument that is <strong>deprecated</strong> since version %2$s! %3$s"
 msgstr "%1$s est appelé avec un argument qui est <strong>obsolète</strong> depuis la version %2$s ! %3$s"
 
@@ -11297,21 +11461,30 @@ msgstr "%1$s est appelé avec un argument qui est <strong>obsolète</strong> dep
 #. translators: 1: WordPress hook name, 2: version number, 3: alternative hook
 #. name
 <<<<<<< HEAD
+<<<<<<< HEAD
 #: wp-includes/functions.php:3837 wp-includes/functions.php:3965
 #: wp-includes/functions.php:4088
 =======
 #: wp-includes/functions.php:3838 wp-includes/functions.php:3966
 #: wp-includes/functions.php:4089
 >>>>>>> dev-josselin
+=======
+#: wp-includes/functions.php:3838 wp-includes/functions.php:3966
+#: wp-includes/functions.php:4089
+>>>>>>> dev-etienne
 msgid "%1$s is <strong>deprecated</strong> since version %2$s! Use %3$s instead."
 msgstr "%1$s est <strong>obsolète</strong> depuis la version %2$s ! Utilisez %3$s à la place."
 
 #. translators: 1: PHP function name, 2: version number
 <<<<<<< HEAD
+<<<<<<< HEAD
 #: wp-includes/functions.php:4032
 =======
 #: wp-includes/functions.php:4033
 >>>>>>> dev-josselin
+=======
+#: wp-includes/functions.php:4033
+>>>>>>> dev-etienne
 msgid "%1$s was called with an argument that is <strong>deprecated</strong> since version %2$s with no alternative available."
 msgstr "%1$s est appelé avec un argument qui est <strong>obsolète</strong> depuis la version %2$s, aucune alternative n’est disponible."
 
@@ -11319,12 +11492,17 @@ msgstr "%1$s est appelé avec un argument qui est <strong>obsolète</strong> dep
 #. translators: 1: PHP file name, 2: version number
 #. translators: 1: WordPress hook name, 2: version number
 <<<<<<< HEAD
+<<<<<<< HEAD
 #: wp-includes/functions.php:3840 wp-includes/functions.php:3968
 #: wp-includes/functions.php:4091
 =======
 #: wp-includes/functions.php:3841 wp-includes/functions.php:3969
 #: wp-includes/functions.php:4092
 >>>>>>> dev-josselin
+=======
+#: wp-includes/functions.php:3841 wp-includes/functions.php:3969
+#: wp-includes/functions.php:4092
+>>>>>>> dev-etienne
 msgid "%1$s is <strong>deprecated</strong> since version %2$s with no alternative available."
 msgstr "%1$s est <strong>obsolète</strong> depuis la version %2$s, aucune alternative n’est disponible."
 
@@ -11414,16 +11592,20 @@ msgid "Link Rel"
 msgstr "Attribut « Rel » du lien"
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 #: wp-includes/class-wp-editor.php:1140
 msgid "The URL you entered seems to be an external link. Do you want to add the required http:// prefix?"
 msgstr "L’URL que vous avez saisie semble être un lien externe. Voulez-vous ajouter le préfixe « http:// » nécessaire ?"
 
 =======
 >>>>>>> dev-josselin
+=======
+>>>>>>> dev-etienne
 #: wp-includes/class-wp-editor.php:1138
 msgid "The URL you entered seems to be an email address. Do you want to add the required mailto: prefix?"
 msgstr "L’URL que vous avez saisie semble être une adresse de messagerie. Voulez-vous y ajouter le préfixe « mailto: » nécessaire ?"
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 #: wp-includes/general-template.php:3712
 msgid "&laquo; Previous"
@@ -11437,6 +11619,13 @@ msgstr "« Précédent"
 
 #: wp-includes/functions.php:2736
 >>>>>>> dev-josselin
+=======
+#: wp-includes/general-template.php:3714
+msgid "&laquo; Previous"
+msgstr "« Précédent"
+
+#: wp-includes/functions.php:2736
+>>>>>>> dev-etienne
 msgid "&laquo; Back"
 msgstr "« Retour"
 
@@ -11445,10 +11634,14 @@ msgid "Newer Comments &raquo;"
 msgstr "Commentaires plus récents »"
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 #: wp-includes/general-template.php:3713
 =======
 #: wp-includes/general-template.php:3715
 >>>>>>> dev-josselin
+=======
+#: wp-includes/general-template.php:3715
+>>>>>>> dev-etienne
 msgid "Next &raquo;"
 msgstr "Suivant »"
 
@@ -11466,12 +11659,18 @@ msgid "You may only upload 1 file."
 msgstr "Vous pouvez uniquement téléverser 1 fichier."
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> dev-etienne
 #: wp-includes/class-wp-editor.php:1140
 msgid "The URL you entered seems to be an external link. Do you want to add the required http:// prefix?"
 msgstr "L’URL que vous avez saisie semble être un lien externe. Voulez-vous ajouter le préfixe « http:// » nécessaire ?"
 
+<<<<<<< HEAD
 >>>>>>> dev-josselin
+=======
+>>>>>>> dev-etienne
 #: wp-includes/class-wp-customize-panel.php:366
 #: wp-includes/class-wp-customize-section.php:359
 #: wp-includes/customize/class-wp-customize-nav-menus-panel.php:82
@@ -11610,10 +11809,14 @@ msgstr "Site web"
 
 #: wp-includes/admin-bar.php:830 wp-includes/class-wp-customize-widgets.php:412
 <<<<<<< HEAD
+<<<<<<< HEAD
 #: wp-includes/functions.php:3713
 =======
 #: wp-includes/functions.php:3714
 >>>>>>> dev-josselin
+=======
+#: wp-includes/functions.php:3714
+>>>>>>> dev-etienne
 msgid "Widgets"
 msgstr "Widgets"
 
@@ -12216,10 +12419,14 @@ msgid "View Post"
 msgstr "Voir l’article"
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 #: wp-includes/deprecated.php:3130 wp-includes/functions.php:2605
 =======
 #: wp-includes/deprecated.php:3130 wp-includes/functions.php:2606
 >>>>>>> dev-josselin
+=======
+#: wp-includes/deprecated.php:3130 wp-includes/functions.php:2606
+>>>>>>> dev-etienne
 msgid "Are you sure you want to do this?"
 msgstr "Voulez-vous vraiment faire cela ?"
 

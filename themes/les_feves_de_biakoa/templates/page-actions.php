@@ -1,13 +1,12 @@
 <?php
 /*
+<<<<<<< HEAD
 Template Name: Page Nos Actions
 */
 
-    get_header();
+get_header();
 
 ?>
-
-
 
 <main>
     <div class="headTitles">
@@ -36,4 +35,3 @@ Template Name: Page Nos Actions
 
 
 <?php get_footer(); ?>
-

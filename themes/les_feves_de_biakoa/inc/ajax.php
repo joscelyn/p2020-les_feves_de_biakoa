@@ -7,6 +7,7 @@ function post_function($postType) {
 
     global $wpdb, $_POST;
 
+
     $paged = $_POST['paged'];
     $args = array(
         'post_type' => $postType,
@@ -14,12 +15,12 @@ function post_function($postType) {
         'paged' => $paged
     );
 
+
     // The Query
     $the_query = new WP_Query( $args );
 
     // The Loop
     if ( $the_query->have_posts() ) {
-
         while ( $the_query->have_posts() ) {
             $the_query->the_post();
             $GLOBALS['max_paged'] = $the_query->max_num_pages;

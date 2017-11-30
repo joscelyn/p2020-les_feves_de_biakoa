@@ -8,7 +8,7 @@
     <div class="action__item__infos box">
 
         <img src="<?php the_post_thumbnail_url(); ?>" alt="">
-    
+
         <div class="action__item__text">
 
             <h3 class="action__item__subTitle"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>

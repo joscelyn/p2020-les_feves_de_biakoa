@@ -20,6 +20,7 @@
             <div class="footer__contact">
 
                 <?php dynamic_sidebar( 'sidebar-footer' ); ?>
+
             </div>
             <div class="footer__social">
                 <h3>Suivez-nous !</h3>
@@ -50,7 +51,7 @@
     </div>
 </footer>
 
-<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAGKIl64tL7_fsC0ZssSSgE3g_E1xb7qdY&callback=initMap"></script>
+<!--<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAGKIl64tL7_fsC0ZssSSgE3g_E1xb7qdY&callback=initMap"></script>-->
 
 
 </body>

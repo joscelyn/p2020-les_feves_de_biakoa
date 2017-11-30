@@ -32,6 +32,7 @@ function duplicate_post_wpml_copy_translations($post_id, $post, $status = '') {
 					$new_post_id = duplicate_post_create_duplicate( $translation, $status );
 					$sitepress->set_element_language_details( $new_post_id, 'post_' . $translation->post_type, $new_trid, $code, $current_language );
 				}
+
 			}
 		}
 		$duplicated_posts[ $post->ID ] = $post_id;
@@ -72,9 +73,11 @@ function duplicate_wpml_string_packages() {
 					}
 					
 				}
-				
+
 			}
 		}
+		$duplicated_posts[ $post->ID ] = $post_id;
 	}
 }
+
 ?>

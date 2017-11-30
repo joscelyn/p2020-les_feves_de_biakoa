@@ -1,6 +1,7 @@
 <?php /*
-Template Name: Home
-*/
+ Template Name: Home
+ */
+
 ?>
 
 <?php get_header(); ?>
@@ -55,7 +56,7 @@ Template Name: Home
                                     <div class="box__text">
                                         <h4>Le village de Biakoa est un petit village du Cameroun, au nord de Yaoundé.</h4>
                                         <p><?php echo the_field('section_2_village_desc_texte');?></p>
-                                        <a href="village.html" class="btn">Visiter le village</a>
+                                        <a href="<?php echo get_permalink( get_page_by_path( 'village' ) ); ?>" class="btn">Visiter le village</a>
                                     </div>
                                 </div>
                                 <figure class="image">
@@ -87,7 +88,7 @@ Template Name: Home
 
                                 <figure class="map box green">
                                     <div class="googleMap">
-
+                                        <?php get_template_part('templates/misc/map') ?>
                                     </div>
                                     <figcaption class="map__caption">
                                         <p>Le village est situé dans la région du Centre, dans le département du Mbam-et-Kim. Il fait partie de la commune de Mbangassina.</p>
@@ -110,16 +111,6 @@ Template Name: Home
 <!--                                </figure>-->
 <!--                            </div>-->
 
-<!--                            <div class="col-1">-->
-<!--                                <figure class="map box green">-->
-<!--                                    <div class="googleMap">-->
-<!---->
-<!--                                    </div>-->
-<!--                                    <figcaption class="map__caption">-->
-<!--                                        <p>Le village est situé dans la région du Centre, dans le département du Mbam-et-Kim. Il fait partie de la commune de Mbangassina.</p>-->
-<!--                                    </figcaption>-->
-<!--                                </figure>-->
-<!--                            </div>-->
 
                         </div>
 
@@ -130,7 +121,7 @@ Template Name: Home
                         <div class="container">
                             <div class="titleAndLink">
                                 <h2 class="fatTitle">Actualités</h2>
-                                <a href="#">Toutes les actualités <img class="titleAndLink__arrow" src="<?= THEME_URL ?>/dist/img/arrow.svg"></a>
+                                <a href="<?php echo get_permalink( get_page_by_path( 'actualites' ) );?>">Toutes les actualités <img class="titleAndLink__arrow" src="<?= THEME_URL ?>/dist/img/arrow.svg"></a>
                             </div>
 
                             <div class="posts__cards">
@@ -172,7 +163,7 @@ Template Name: Home
                         <div class="container">
                             <div class="titleAndLink">
                                 <h2 class="fatTitle">Nos actions</h2>
-                                <a href="#">Tous les projets <img class="titleAndLink__arrow" src="<?= THEME_URL ?>/dist/img/arrow.svg"></a>
+                                <a href="<?php echo get_permalink( get_page_by_path( 'actions' ) );?>">Tous les projets <img class="titleAndLink__arrow" src="<?= THEME_URL ?>/dist/img/arrow.svg"></a>
                             </div>
 
                             <div class="projects__cards">
@@ -216,27 +207,8 @@ Template Name: Home
                                 </div>
                             </div>
 
-                            <div class="partners__slider">
+                            <?php get_template_part( 'templates/misc/partenaires' ); ?>
 
-                                <?php
-                            $args=array(
-                                'post_type' => 'partenaire',
-                                'orderby' => 'date',
-                                'order'   => 'DESC',
-                            );
-                            $the_query = new WP_Query( $args );
-                            ?>
-
-                            <?php if ( $the_query->have_posts() ) : while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
-                                <div class="partners__slider__item">
-                                    <?php the_post_thumbnail(); ?>
-                                </div>
-
-                            <?php endwhile; else: ?>
-                                <p>Sorry, no posts matched your criteria.</p>
-                            <?php endif; ?>
-
-                            </div>
                         </div>
                     </div>
         </main>

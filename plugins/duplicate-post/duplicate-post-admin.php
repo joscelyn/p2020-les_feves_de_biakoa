@@ -12,7 +12,11 @@ require_once (dirname(__FILE__).'/compat/duplicate-post-jetpack.php');
  * Wrapper for the option 'duplicate_post_version'
 */
 function duplicate_post_get_installed_version() {
+<<<<<<< HEAD
 	return get_site_option( 'duplicate_post_version' );
+=======
+	return get_option( 'duplicate_post_version' );
+>>>>>>> dev-josselin
 }
 
 /**
@@ -89,7 +93,11 @@ function duplicate_post_admin_init(){
 function duplicate_post_plugin_upgrade() {
 	$installed_version = duplicate_post_get_installed_version();
 	
+<<<<<<< HEAD
 	if ( $installed_version==duplicate_post_get_current_version() )
+=======
+	if ( $installed_version == duplicate_post_get_current_version() )
+>>>>>>> dev-josselin
 		return;
 
 		
@@ -177,8 +185,13 @@ function duplicate_post_plugin_upgrade() {
 	delete_option('duplicate_post_view_user_level');
 	delete_option('dp_notice');
 	
+<<<<<<< HEAD
 	delete_option('duplicate_post_version');
 	update_site_option( 'duplicate_post_version', duplicate_post_get_current_version() );
+=======
+	delete_site_option('duplicate_post_version');
+	update_option( 'duplicate_post_version', duplicate_post_get_current_version() );
+>>>>>>> dev-josselin
 	
 	delete_option('duplicate_post_show_notice', 0);
 	update_site_option('duplicate_post_show_notice', 1);
@@ -191,8 +204,13 @@ function duplicate_post_plugin_upgrade() {
 function duplicate_post_show_update_notice() {
 	if(!current_user_can( 'manage_options')) return;
 	$class = 'notice is-dismissible';
+<<<<<<< HEAD
 	$message = '<strong><a href="https://duplicate-post.lopo.it/">'.esc_html__('Check out the new documentation for Duplicate Post!', 'duplicate-post').'</a></strong><br/>';
 	$message .= '<em>'.esc_html__('Duplicate Post is now also compatible with WPML!', 'duplicate-post').'</em><br/>';
+=======
+	$message = '<strong>'.esc_html__('Duplicate Post turns 10!', 'duplicate-post').'</strong> '.esc_html__('Serving the WordPress community since November 2007.', 'duplicate-post').'<br/>';
+	$message .= '<em><a href="https://duplicate-post.lopo.it/">'.esc_html__('Check out the new documentation', 'duplicate-post').'</a> - '.sprintf(__('Please <a href="%s">review the settings</a> to make sure it works as you expect.', 'duplicate-post'), admin_url('options-general.php?page=duplicatepost')).'</em><br/>';
+>>>>>>> dev-josselin
 	$message .= '<strong>'.sprintf(wp_kses(__('Help me develop the plugin and provide support by <a href="%s">donating even a small sum</a>.', 'duplicate-post'), array( 'a' => array( 'href' => array() ) ) ), "https://duplicate-post.lopo.it/donate").'</strong>';
 	global $wp_version;
 	if( version_compare($wp_version, '4.2') < 0 ){
@@ -276,6 +294,13 @@ function duplicate_post_add_removable_query_arg( $removable_query_args ){
 * then redirects to the post list
 */
 function duplicate_post_save_as_new_post($status = ''){
+<<<<<<< HEAD
+=======
+	if(!duplicate_post_is_current_user_allowed_to_copy()){
+		wp_die(esc_html__('Current user is not allowed to copy posts.', 'duplicate-post'));
+	}
+	
+>>>>>>> dev-josselin
 	if (! ( isset( $_GET['post']) || isset( $_POST['post'])  || ( isset($_REQUEST['action']) && 'duplicate_post_save_as_new_post' == $_REQUEST['action'] ) ) ) {
 		wp_die(esc_html__('No post to duplicate has been supplied!', 'duplicate-post'));
 	}
@@ -592,6 +617,14 @@ function duplicate_post_create_duplicate($post, $status = '', $parent_id = '') {
 	if(!empty($increase_menu_order_by) && is_numeric($increase_menu_order_by)){
 		$menu_order += intval($increase_menu_order_by);
 	}
+<<<<<<< HEAD
+=======
+	
+	$post_name = $post->post_name;
+	if(get_option('duplicate_post_copyslug') != 1){
+		$post_name = '';
+	}
+>>>>>>> dev-josselin
 
 	$new_post = array(
 	'menu_order' => $menu_order,
@@ -607,6 +640,10 @@ function duplicate_post_create_duplicate($post, $status = '', $parent_id = '') {
 	'post_status' => $new_post_status,
 	'post_title' => $title,
 	'post_type' => $post->post_type,
+<<<<<<< HEAD
+=======
+	'post_name' => $post_name
+>>>>>>> dev-josselin
 	);
 
 	if(get_option('duplicate_post_copydate') == 1){
@@ -616,6 +653,7 @@ function duplicate_post_create_duplicate($post, $status = '', $parent_id = '') {
 
 	$new_post_id = wp_insert_post(wp_slash($new_post));
 
+<<<<<<< HEAD
 	// If the copy is published or scheduled, we have to set a proper slug.
 	if ($new_post_status == 'publish' || $new_post_status == 'future'){
 		$post_name = $post->post_name;
@@ -643,6 +681,24 @@ function duplicate_post_create_duplicate($post, $status = '', $parent_id = '') {
 	add_post_meta($new_post_id, '_dp_original', $post->ID);
 
 	do_action('duplicate_post_post_copy');
+=======
+	// If you have written a plugin which uses non-WP database tables to save
+	// information about a post you can hook this action to dupe that data.
+	
+	if($new_post_id !== 0 && !is_wp_error($new_post_id)){
+		
+		if ($post->post_type == 'page' || is_post_type_hierarchical( $post->post_type ))
+			do_action( 'dp_duplicate_page', $new_post_id, $post, $status );
+		else
+			do_action( 'dp_duplicate_post', $new_post_id, $post, $status );
+	
+		delete_post_meta($new_post_id, '_dp_original');
+		add_post_meta($new_post_id, '_dp_original', $post->ID);
+	
+		do_action('duplicate_post_post_copy');
+		
+	}
+>>>>>>> dev-josselin
 	
 	return $new_post_id;
 }

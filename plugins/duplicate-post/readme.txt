@@ -4,7 +4,11 @@ Donate link: 		https://duplicate-post.lopo.it/
 Tags: 				duplicate post, copy, clone
 Requires at least: 	3.6
 Tested up to: 		4.9
+<<<<<<< HEAD
 Stable tag: 		3.2
+=======
+Stable tag: 		3.2.1
+>>>>>>> dev-josselin
 License: 			GPLv2 or later
 License URI: 		http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -76,6 +80,12 @@ If Duplicate Post is still in English, or if there are some untraslated strings,
 
 == Upgrade Notice ==
 
+<<<<<<< HEAD
+=======
+= 3.2.1 =
+Fixes some problems with Multisite, WPML, revisions
+
+>>>>>>> dev-josselin
 = 3.2 =
 new website + WPML compatibility + various fixes
 
@@ -138,6 +148,15 @@ New features and customization, WP 3.0 compatibility: you should upgrade if you 
 
 == Changelog ==
 
+<<<<<<< HEAD
+=======
+= 3.2.1 (2017-11-25) =
+* Fixing some issues of the 3.* trunk before major redesign
+* Fixes issue when upgrading on multisite
+* Improved compatibility with WPML + page builders, thanks to WPML team
+* Prevents creating a revision immediately after the cloning
+
+>>>>>>> dev-josselin
 = 3.2 (2017-04-04) =
 * new website with extensive documentation
 * WPML compatibility, thanks to WPML team

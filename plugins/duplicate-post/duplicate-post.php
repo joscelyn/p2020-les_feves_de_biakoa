@@ -3,7 +3,11 @@
  Plugin Name: Duplicate Post
  Plugin URI: https://duplicate-post.lopo.it/
  Description: Clone posts and pages.
+<<<<<<< HEAD
  Version: 3.2
+=======
+ Version: 3.2.1
+>>>>>>> dev-josselin
  Author: Enrico Battocchi
  Author URI: https://lopo.it
  Text Domain: duplicate-post
@@ -31,7 +35,11 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 
 // Version of the plugin
+<<<<<<< HEAD
 define('DUPLICATE_POST_CURRENT_VERSION', '3.2' );
+=======
+define('DUPLICATE_POST_CURRENT_VERSION', '3.2.1' );
+>>>>>>> dev-josselin
 
 
 /**

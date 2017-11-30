@@ -1,15 +1,5 @@
 <?php
 
-    /**
-     * function
-     * @private
-     * @version     0.5.1
-     * @property    undefined
-     * @package     WordPress
-     * @subpackage  firstPixel
-     * @since       0.1
-     */
-
     define( 'THEME_PATH' ,          get_template_directory()            );
     define( 'TEMPLATE_PATH' ,       THEME_PATH .    '/templates'        );
 
@@ -19,6 +9,7 @@
     define( 'JS_URL' ,              THEME_URL .    '/dist/js'      );
     define( 'FAVICONS_URL' ,        THEME_URL .    '/dist/favicon'      );
     define( 'ADMIN_IMAGES_URL' ,    IMAGES_URL .   '/admin'             );
+    define( 'THEME_NAME',           'biakoa' );
 
 
     // LOADING CORE FILES
@@ -27,7 +18,11 @@
     }
 
     // SUPPORT THUMBNAILS
+<<<<<<< HEAD
 	add_theme_support('post-thumbnails');
 
     // REGISTER
 
+=======
+	add_theme_support('post-thumbnails');
+>>>>>>> dev-josselin

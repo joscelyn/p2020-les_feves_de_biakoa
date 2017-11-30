@@ -28,10 +28,7 @@
             // CUSTOM MENU HEADER
             wp_nav_menu( array (
                 'theme_location' => 'menu-header',
-<<<<<<< HEAD
-=======
                 'menu_id'        => 'primary-menu',
->>>>>>> dev-josselin
                 'container'      => 'nav',
             ));
             ?>

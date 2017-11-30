@@ -35,12 +35,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 
 // Version of the plugin
-<<<<<<< HEAD
-define('DUPLICATE_POST_CURRENT_VERSION', '3.2' );
-=======
 define('DUPLICATE_POST_CURRENT_VERSION', '3.2.1' );
->>>>>>> dev-josselin
-
 
 /**
  * Initialise the internationalisation domain

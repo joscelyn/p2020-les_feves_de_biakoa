@@ -18,11 +18,4 @@
     }
 
     // SUPPORT THUMBNAILS
-<<<<<<< HEAD
 	add_theme_support('post-thumbnails');
-
-    // REGISTER
-
-=======
-	add_theme_support('post-thumbnails');
->>>>>>> dev-josselin

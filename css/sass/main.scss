@@ -10,6 +10,7 @@ $width: 1240px;
 # Imports
 --------------------------------------------------------------*/
 @import "normalize";
+@import "mixins";
 
 /*--------------------------------------------------------------
 # Base
@@ -50,6 +51,10 @@ body {
 
         &--txtRight {
             text-align: right;
+
+            @include small {
+                text-align: left;
+            }
         }
 
         p {
@@ -87,6 +92,10 @@ h5 {
 p {
     font-size: 16px;
     line-height: 1.5;
+
+    @include small {
+        font-size: 14px;
+    }
 }
 
 a {
@@ -176,12 +185,20 @@ a {
     display: flex;
     justify-content: space-between;
 
+    @include small {
+        flex-direction: column;
+    }
+
     &--middle {
         align-items: center;
     }
 
     > :not(:first-child) {
         margin-left: 30px;
+
+        @include small {
+            margin-left: 0;
+        }
     }
 
     .col-1 {
@@ -198,6 +215,10 @@ a {
 
     .col-small {
         max-width: 300px;
+
+        @include smallest {
+            max-width: none;
+        }
     }
 }
 
@@ -239,10 +260,20 @@ a {
         display: flex;
         align-items: center;
 
+        @include small {
+            flex-direction: column;
+        }
+
         .image__img {
             position: relative;
             z-index: 2;
             height: auto;
+
+            @include small {
+                &.box {
+                    margin-bottom: -20px;
+                }
+            }
         }
 
         .image__caption {
@@ -253,6 +284,11 @@ a {
             min-width: 200px;
             margin-left: -20px;
             padding-left: 50px;
+
+            @include small {
+                margin-left: 0;
+                margin-top: 0;
+            }
         }
     }
 }

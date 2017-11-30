@@ -3,15 +3,37 @@
     &__cards {
         display: flex;
         justify-content: space-between;
+
+        @include small {
+            flex-direction: column;
+        }
     }
 
     &__card {
-        width: 31.5%;
+        margin-right: 30px;
+
+        @include small {
+            max-width: 400px;
+            margin: auto;
+            margin-bottom: 30px;
+        }
+
+        &:last-child {
+            margin-right: 0;
+
+            @include small {
+                margin-right: auto;
+            }
+        }
 
         img {
             width: 100%;
             height: 210px;
             object-fit: cover;
+
+            @include small {
+
+            }
         }
 
         &__text {

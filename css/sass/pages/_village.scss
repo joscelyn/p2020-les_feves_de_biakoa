@@ -6,6 +6,10 @@
     margin-bottom: -30px;
     padding: 50px 100px;
 
+    @include small {
+        margin-top: 0;
+    }
+
     .fatTitle {
       color: white;
     }
@@ -15,6 +19,11 @@
   .negativeMargin {
     margin-top: -50px;
     margin-left: -50px;
+
+    @include small {
+        margin-top: 0;
+        margin-left: 0;
+    }
   }
 
   .extraPadding {

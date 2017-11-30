@@ -7,6 +7,10 @@
         justify-content: center;
         margin-bottom: 32px;
 
+        @include small {
+            flex-direction: column;
+        }
+
         &__title {
             position: relative;
             margin-right: -40px;
@@ -15,6 +19,11 @@
             color: #fff;
             background: $color;
             z-index: 2;
+
+            @include small {
+                margin-right: 0;
+                margin-bottom: -20px;
+            }
         }
 
         &__infos {

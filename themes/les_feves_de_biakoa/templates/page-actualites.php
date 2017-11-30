@@ -16,6 +16,7 @@ get_header(); ?>
             <div class="posts__cards">
                 <?php
                     post_function('post');
+                    wp_reset_query();
                 ?>
             </div>
             <div class="container">

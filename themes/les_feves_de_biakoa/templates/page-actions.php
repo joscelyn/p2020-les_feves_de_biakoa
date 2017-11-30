@@ -26,6 +26,7 @@ get_header();
 
         endforeach;
 
+        wp_reset_query();
     ?>
 
 

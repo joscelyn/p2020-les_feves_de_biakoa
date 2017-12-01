@@ -3,6 +3,7 @@
     &__cards {
         display: flex;
         justify-content: space-between;
+        flex-wrap: wrap;
 
         @include small {
             flex-direction: column;
@@ -13,26 +14,25 @@
         flex: 1;
         display: flex;
         flex-direction: column;
+        justify-content: flex-start;
         margin-right: 30px;
+        margin-bottom: 30px;
         min-width: 300px;
 
         @include small {
             max-width: 400px;
             margin: auto;
-            margin-bottom: 30px;
         }
 
-        @include medium-only {
-            &:nth-child(3n+3) {
-                display: none;
-            }
-        }
-
-        &:last-child {
+        &:nth-child(3n+3) {
             margin-right: 0;
 
             @include small {
                 margin-right: auto;
+            }
+
+            @include medium-only {
+                display: none;
             }
         }
 

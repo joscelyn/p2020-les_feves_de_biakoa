@@ -4,13 +4,11 @@
     <div class="container">
 
         <div class="rowFlex">
-            <a class="footer__logo">
                 <?php
 
                     if ( function_exists( 'custom_logo_setup' ) ){
                         the_custom_logo();
                      } ?>
-            </a>
             <div class="footer__contact">
 
                 <?php dynamic_sidebar( 'sidebar-footer' ); ?>

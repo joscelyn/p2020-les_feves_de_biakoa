@@ -25,8 +25,12 @@ body {
 
 .container {
     max-width: $width;
-    width: 90%;
+    padding: 0 30px;
     margin: 0 auto;
+
+    @include small {
+        padding: 0 10px;
+    }
 }
 
 .box {
@@ -164,6 +168,10 @@ a {
     align-items: center;
     margin: 42px 0 22px;
 
+    @include smallest {
+        flex-direction: column;
+    }
+
     a {
         font-size: 21px;
         color: $color;
@@ -297,7 +305,7 @@ a {
     font-size: 16px;
 
     &--bg {
-        background: url(../img/background.svg);
+        background: url(../img/background.svg), $bg;
         background-size: 100%;
     }
 

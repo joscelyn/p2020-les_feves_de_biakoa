@@ -84,9 +84,71 @@
                             obcaecati pariatur, quas. Ab cum enim, facilis fugiat hic ipsa labore necessitatibus non quae
                             quam quisquam unde voluptates?</p>
                     </div>
+
                 </div>
             </div>
         </div>
+
+		<div class="comments container">
+
+			<h2 class="fatTitle">Commentaires</h2>
+
+			<ul class="comments__list">
+				<li class="comment">
+					<div class="comment__profile box">
+						<img src="images/guy.jpg" alt="Profile">
+					</div>
+					<div class="comment__text box">
+						<h3 class="comment__text__name">etienne</h3>
+						<p class="comment__text__specs">2017-11-30 12:32:53</p>
+						<p class="comment__text__content">
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non quidem repudiandae praesentium maxime soluta sit quibusdam aut ducimus, molestias, iure magnam voluptate sunt distinctio fugit harum, quod veritatis, aliquid quam.
+						</p>
+					</div>
+				</li>
+				<li class="comment">
+					<div class="comment__profile box">
+						<img src="#" alt="Profile">
+					</div>
+					<div class="comment__text box">
+						<h3 class="comment__text__name">etienne</h3>
+						<p class="comment__text__specs">2017-11-30 12:32:53</p>
+						<p class="comment__text__content">
+							Lorem !
+						</p>
+					</div>
+				</li>
+			</ul>
+
+			<div id="respond" class="comment-respond">
+
+				<h3 id="reply-title" class="comment-reply-title fatTitle">
+					Laisser un commentaire
+					<small><a rel="nofollow" id="cancel-comment-reply-link" href="http://localhost/_projets/biakoa/2017/11/15/post-1/#respond" style="display:none;">Annuler la réponse.</a></small>
+				</h3>
+
+				<form action="http://localhost/_projets/biakoa/wp-comments-post.php" method="post" id="commentform" class="comment-form">
+					<p class="logged-in-as">
+						<a href="http://localhost/_projets/biakoa/wp-admin/profile.php" aria-label="Connexion en tant que etienne. Modifier votre profil.">Connecté en tant que etienne</a>
+						 |
+						<a href="http://localhost/_projets/biakoa/wp-login.php?action=logout&amp;redirect_to=http%3A%2F%2Flocalhost%2F_projets%2Fbiakoa%2F2017%2F11%2F15%2Fpost-1%2F&amp;_wpnonce=c760730fb5" class="log-out">Déconnexion</a>
+					</p>
+					<p class="comment-form-comment">
+						<label for="comment">Votre commentaire</label>
+						<textarea id="comment" class="box" name="comment" cols="45" rows="8" maxlength="65525" aria-required="true" required="required"></textarea>
+					</p>
+					<p class="form-submit">
+						<input name="submit" type="submit" id="submit" class="submit btn" value="Laisser un commentaire">
+						<input type="hidden" name="comment_post_ID" value="32" id="comment_post_ID">
+						<input type="hidden" name="comment_parent" id="comment_parent" value="0">
+					</p>
+					<input type="hidden" id="_wp_unfiltered_html_comment_disabled" name="_wp_unfiltered_html_comment" value="c32362123a">
+
+					<script>(function(){if(window===window.parent){document.getElementById('_wp_unfiltered_html_comment_disabled').name='_wp_unfiltered_html_comment';}})();</script>
+				</form>
+			</div><!-- #respond -->
+
+		</div>
 
 
         <div class="posts">

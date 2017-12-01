@@ -10,6 +10,9 @@
     }
 
     &__card {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
         margin-right: 30px;
         min-width: 300px;
 
@@ -61,15 +64,41 @@
         }
 
         &__text {
+            align-self: flex-end;
             padding: 0 30px 30px;
-        }
+            display: flex;
+            justify-content: flex-start;
+            flex-direction: column;
 
-        &__title {
-            font-size: 26px;
-        }
+            &__title {
+                font-size: 26px;
+            }
 
-        .btn {
-            margin: 12px 0 0;
+            .txt-center {
+                align-self: flex-end;
+                margin: auto;
+
+                .btn {
+                    margin: 12px 0 0;
+                }
+            }
         }
     }
+
+    .button_more {
+        text-align: center;
+        margin-top: 50px;
+
+        a {
+            font-weight: 700;
+            font-family: "Palanquin Dark";
+            padding: 10px 30px;
+            background: white;
+            border-radius: 1000px;
+            text-transform: uppercase;
+            box-shadow: 10px 10px 33px rgba(0, 0, 0, 0.15);
+            text-decoration: none;
+        }
+    }
+
 }

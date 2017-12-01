@@ -1,0 +1,70 @@
+.village {
+
+  .abstract {
+    margin: auto;
+    margin-top: 100px;
+    margin-bottom: -30px;
+    padding: 50px 100px;
+
+    .fatTitle {
+      color: white;
+    }
+
+  }
+
+  .negativeMargin {
+    margin-top: -50px;
+    margin-left: -50px;
+  }
+
+  .extraPadding {
+    &--right {
+      padding-right: 80px;
+    }
+    &--left {
+      padding-left: 80px;
+    }
+  }
+
+  .keyFigures {
+    padding: 0;
+    margin: 0;
+    margin-bottom: 100px;
+    margin-left: 30px;
+
+    li {
+      list-style: none;
+    }
+
+    &__figure {
+      display: block;
+      margin: 20px 0 10px 0;
+      font-size: 40px;
+      color: $color;
+    }
+
+  }
+
+  .centerText {
+    align-self: center;
+    position: relative;
+    margin: 100px auto;
+
+    &__text {
+      position: relative;
+      z-index: 1;
+
+    }
+
+    &__icon {
+      position: absolute;
+      left: -50px;
+      top: -50px;
+      width: 100px;
+    }
+
+  }
+
+
+
+}

@@ -1,0 +1,18 @@
+{
+  "name": "joscelyn-gainie",
+  "version": "1.0.0",
+  "description": "Site personnel",
+  "author": "Joscelyn Gainié <joscelyngainie.fr>",
+  "devDependencies": {
+    "browserslist": "latest",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "latest",
+    "gulp-cssmin": "latest",
+    "gulp-imagemin": "latest",
+    "gulp-plumber": "latest",
+    "gulp-rename": "latest",
+    "gulp-sass": "latest",
+    "gulp-webserver": "latest",
+    "imagemin-pngquant": "latest"
+  }
+}

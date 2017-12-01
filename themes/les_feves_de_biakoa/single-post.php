@@ -65,9 +65,6 @@ if( have_posts() ): while( have_posts() ): the_post();
                 </div>
             </div>
         </div>
-
-
-        <?php get_template_part( 'templates/misc/section_supportus' ); ?>
     </main>
 </div>
 

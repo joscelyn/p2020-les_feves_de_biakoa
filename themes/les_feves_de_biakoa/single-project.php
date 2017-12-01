@@ -96,9 +96,6 @@
             <p>Pas d'article</p>
 
         <?php endif; ?>
-
-
-        <?php get_template_part( 'templates/misc/section_supportus' ); ?>
     </main>
 </div>
 

@@ -1132,9 +1132,15 @@ a {
 
 .village .extraPadding--right {
   padding-right: 80px; }
+  @media (max-width: 839px) {
+    .village .extraPadding--right {
+      padding-right: 0; } }
 
 .village .extraPadding--left {
   padding-left: 80px; }
+  @media (max-width: 839px) {
+    .village .extraPadding--left {
+      padding-left: 0; } }
 
 .village .keyFigures {
   padding: 0;

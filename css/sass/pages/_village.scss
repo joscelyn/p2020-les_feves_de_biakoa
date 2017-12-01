@@ -28,12 +28,22 @@
   }
 
   .extraPadding {
+
     &--right {
       padding-right: 80px;
+
+      @include small {
+          padding-right: 0;
+      }
     }
     &--left {
       padding-left: 80px;
+
+      @include small {
+          padding-left: 0;
+      }
     }
+
   }
 
   .keyFigures {

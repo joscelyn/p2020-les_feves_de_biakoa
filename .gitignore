@@ -1,3 +1,11 @@
 node_modules/
 package-lock.json
+<<<<<<< HEAD
 .idea/
+=======
+<<<<<<< HEAD
+/.idea
+=======
+.idea/
+>>>>>>> 9b1e349b4c7da8ab997b0687439826295b59c45e
+>>>>>>> dev

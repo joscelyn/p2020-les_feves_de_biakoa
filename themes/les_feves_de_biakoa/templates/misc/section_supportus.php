@@ -9,7 +9,7 @@
                 <h3 class="supportUs__title"><?php echo the_field('section_1_don_sous_titre'); ?></h3>
                 <p class="supportUs__paragraph"><?php echo the_field('section_1_don_texte'); ?></p>
                 <div class="txt-center">
-                    <a class="btn btn--dark" href="#">Faire un don</a>
+                    <a class="btn btn--dark" href="https://www.paypal.me/josselinbodan">Faire un don</a>
                 </div>
             </div>
             <div class="supportUs__img">

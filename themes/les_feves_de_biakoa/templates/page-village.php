@@ -22,7 +22,6 @@ Template Name: Village
                     </div>
                 </div>
             </div>
-            section_1_presentation_image
         </div>
 
         <div class="story">
@@ -94,7 +93,7 @@ Template Name: Village
                         <div class="box extraPadding--right">
                             <div class="box__text box__text--txtRight">
                                 <p><?php echo the_field('section_3_fin_image_legende');?></p>
-                                <a href="index.html" class="btn">Faire un don</a>
+                                <a href="https://www.paypal.me/josselinbodan" class="btn">Faire un don</a>
                             </div>
                         </div>
 

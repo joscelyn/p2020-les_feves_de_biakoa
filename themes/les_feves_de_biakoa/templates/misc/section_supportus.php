@@ -13,7 +13,7 @@
                 </div>
             </div>
             <div class="supportUs__img">
-                <img src="<?php the_field('section_1_don_action_image'); ?>">
+                <img src="<?php the_field('section_1_don_image'); ?>">
             </div>
         </div>
     </div>

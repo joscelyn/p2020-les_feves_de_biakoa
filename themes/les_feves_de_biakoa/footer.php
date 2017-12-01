@@ -4,17 +4,12 @@
     <div class="container">
 
         <div class="rowFlex">
-            <a href="" class="footer__logo">
+            <a class="footer__logo">
                 <?php
 
-                    if ( function_exists( 'custom_logo_setup' ) ):
+                    if ( function_exists( 'custom_logo_setup' ) ){
                         the_custom_logo();
-
-                ?>
-
-                    <img src="<?php echo $logo; ?>" alt="">
-
-                <?php endif; ?>
+                     } ?>
             </a>
             <div class="footer__contact">
 

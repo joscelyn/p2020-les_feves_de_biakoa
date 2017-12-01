@@ -57,12 +57,24 @@
             flex: 2;
             margin-right: 30px;
 
+            @include medium {
+                margin-right: 0;
+            }
+
             .box {
                 display: flex;
             }
 
             &__text {
+                display: flex;
+                flex-direction: column;
                 padding: 42px;
+
+                .txt-center {
+                    align-self: flex-end;
+                    margin: auto;
+                    margin-bottom: 0;
+                }
             }
 
             &__img {

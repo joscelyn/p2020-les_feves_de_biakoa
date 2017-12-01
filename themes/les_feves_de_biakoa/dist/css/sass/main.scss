@@ -1,6 +1,6 @@
 $color: #2ecc71;
 $bg: #f3f3f3;
-body { display: none; }
+
 $dark: #212f3f;
 $dark-lighter: #2C3E50;
 
@@ -10,6 +10,7 @@ $width: 1240px;
 # Imports
 --------------------------------------------------------------*/
 @import "normalize";
+@import "mixins";
 
 /*--------------------------------------------------------------
 # Base
@@ -24,8 +25,12 @@ body {
 
 .container {
     max-width: $width;
-    width: 90%;
+    padding: 0 30px;
     margin: 0 auto;
+
+    @include small {
+        padding: 0 10px;
+    }
 }
 
 .box {
@@ -50,6 +55,10 @@ body {
 
         &--txtRight {
             text-align: right;
+
+            @include small {
+                text-align: left;
+            }
         }
 
         p {
@@ -87,6 +96,10 @@ h5 {
 p {
     font-size: 16px;
     line-height: 1.5;
+
+    @include small {
+        font-size: 14px;
+    }
 }
 
 a {
@@ -155,6 +168,10 @@ a {
     align-items: center;
     margin: 42px 0 22px;
 
+    @include smallest {
+        flex-direction: column;
+    }
+
     a {
         font-size: 21px;
         color: $color;
@@ -176,12 +193,20 @@ a {
     display: flex;
     justify-content: space-between;
 
+    @include small {
+        flex-direction: column;
+    }
+
     &--middle {
         align-items: center;
     }
 
     > :not(:first-child) {
         margin-left: 30px;
+
+        @include small {
+            margin-left: 0;
+        }
     }
 
     .col-1 {
@@ -198,6 +223,10 @@ a {
 
     .col-small {
         max-width: 300px;
+
+        @include smallest {
+            max-width: none;
+        }
     }
 }
 
@@ -239,10 +268,20 @@ a {
         display: flex;
         align-items: center;
 
+        @include small {
+            flex-direction: column;
+        }
+
         .image__img {
             position: relative;
             z-index: 2;
             height: auto;
+
+            @include small {
+                &.box {
+                    margin-bottom: -20px;
+                }
+            }
         }
 
         .image__caption {
@@ -253,6 +292,11 @@ a {
             min-width: 200px;
             margin-left: -20px;
             padding-left: 50px;
+
+            @include small {
+                margin-left: 0;
+                margin-top: 0;
+            }
         }
     }
 }
@@ -261,7 +305,7 @@ a {
     font-size: 16px;
 
     &--bg {
-        background: url(../img/background.svg);
+        background: url(../img/background.svg), $bg;
         background-size: 100%;
     }
 

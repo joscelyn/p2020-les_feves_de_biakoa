@@ -9,11 +9,16 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
+
+    @include small {
+        flex-direction: column;
+    }
+
   }
 
   &__logo {
     display: block;
-      height: 50px;
+    height: 50px;
 
     img {
       height: 100%;
@@ -22,30 +27,40 @@
 
   &__contact {
     margin-left: 30px;
-  }
 
-  .form {
-     &__group {
-       margin-bottom: 10px;
-     }
-
-    label, input[type=email], textarea {
-      display: block;
-      padding: 8px 4px;
-      border-radius: 8px;
+    @include small {
+        margin-top: 30px;
+        margin-bottom: 30px;
+        margin-left: 0;
     }
 
-    input[type=email], textarea {
-      width: 100%;
-      background: $bg;
-      max-width: 300px;
-      border: 2px solid $dark-lighter;
+    .form {
 
-      &:focus {
-        border-color: $color;
-        outline: none;
+      &__group {
+        margin-bottom: 10px;
       }
+
+      label, input[type=email], textarea {
+        display: block;
+        padding: 8px 4px;
+        border-radius: 8px;
+      }
+
+      input[type=email], textarea {
+        width: 100%;
+        background: $bg;
+        max-width: 300px;
+        border: 2px solid $dark-lighter;
+
+        &:focus {
+          border-color: $color;
+          outline: none;
+        }
+
+      }
+
     }
+
   }
 
   &__social {
@@ -77,11 +92,22 @@
       display: flex;
       justify-content: space-around;
 
+      @include small {
+          flex-direction: column;
+          text-align: center;
+      }
+
       li {
         list-style: none;
 
         a {
           color: $bg;
+
+          @include small {
+              display: block;
+              padding: 10px;
+          }
+
         }
       }
     }

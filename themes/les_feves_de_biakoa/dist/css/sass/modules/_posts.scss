@@ -4,27 +4,103 @@
         display: flex;
         justify-content: space-between;
         flex-wrap: wrap;
+
+        @include small {
+            flex-direction: column;
+        }
     }
 
     &__card {
-        width: 31.5%;
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        margin-right: 30px;
+        margin-bottom: 30px;
+        min-width: 300px;
+
+        @include small {
+            max-width: 400px;
+            margin: auto;
+        }
+
+        &:nth-child(3n+3) {
+            margin-right: 0;
+
+            @include small {
+                margin-right: auto;
+            }
+
+            @include medium-only {
+                display: none;
+            }
+        }
 
         img {
             width: 100%;
             height: 210px;
             object-fit: cover;
+            margin-bottom: 30px;
+
+            @include small {
+
+            }
+        }
+
+        li {
+            display: inline-block;
+
+            &:not(:last-of-type)::after {
+                content: " • ";
+                font-weight: 700;
+            }
+
+            a {
+                text-decoration: none;
+                text-transform: uppercase;
+                font-weight: 700;
+                color: $color;
+            }
         }
 
         &__text {
             padding: 0 30px 30px;
-        }
+            display: flex;
+            flex-grow: 1;
+            justify-content: flex-start;
+            flex-direction: column;
 
-        &__title {
-            font-size: 26px;
-        }
+            &__title {
+                font-size: 26px;
+            }
 
-        .btn {
-            margin: 12px 0 0;
+            .txt-center {
+                align-self: flex-end;
+                margin: auto;
+                margin-bottom: 0;
+
+
+                .btn {
+                    margin: 12px 0 0;
+                }
+            }
         }
     }
+
+    .button_more {
+        text-align: center;
+        margin-top: 50px;
+
+        a {
+            font-weight: 700;
+            font-family: "Palanquin Dark";
+            padding: 10px 30px;
+            background: white;
+            border-radius: 1000px;
+            text-transform: uppercase;
+            box-shadow: 10px 10px 33px rgba(0, 0, 0, 0.15);
+            text-decoration: none;
+        }
+    }
+
 }

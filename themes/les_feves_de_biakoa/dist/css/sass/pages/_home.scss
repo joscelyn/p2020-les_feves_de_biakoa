@@ -1,5 +1,15 @@
 .home {
 
+    .headTitles {
+      margin-top: 80px;
+      margin-bottom: 80px;
+
+      @include small {
+          margin-top: 20px;
+          margin-bottom: 20px;
+      }
+    }
+
     .headerBackground {
         height: 820px;
     }
@@ -8,66 +18,127 @@
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
-    }
+        align-items: stretch;
 
-    .aboutUs, .donate {
-        margin-bottom: 37px;
-
-        .fatTitle {
-            color: #fff;
-            text-align: center;
+        @include medium {
+            flex-direction: column;
         }
 
-        h4 {
-            margin: 0;
-            font-size: 23px;
-            line-height: 1.3;
-            font-weight: 400;
+        @include small {
+            background: $bg;
         }
 
-        p {
-            font-size: 18px;
-            font-weight: 600;
-            line-height: 1.5;
-        }
-    }
+        .aboutUs, .donate {
+            margin-bottom: 37px;
 
-    .aboutUs {
-        width: 65%;
+            .fatTitle {
+                color: #fff;
+                text-align: center;
 
-        .box {
-            display: flex;
-        }
+                @include small {
+                    color: $dark;
+                }
+            }
 
-        &__text {
-            padding: 42px;
-        }
-    }
+            h4 {
+                margin: 0;
+                font-size: 23px;
+                line-height: 1.3;
+                font-weight: 400;
+            }
 
-    .donate {
-        width: 32%;
-
-        .box {
-            padding: 42px;
-        }
-
-        h4 {
-            color: #fff;
-        }
-
-        p {
-            color: #000;
-        }
-
-        .btn {
-            color: #000;
-            border-color: #fff;
-
-            &:hover {
-                background: #fff;
+            p {
+                font-size: 18px;
+                line-height: 1.5;
             }
         }
+
+        .aboutUs {
+            flex: 2;
+            margin-right: 30px;
+
+            @include medium {
+                margin-right: 0;
+            }
+
+            .box {
+                display: flex;
+            }
+
+            &__text {
+                display: flex;
+                flex-direction: column;
+                padding: 42px;
+
+                .txt-center {
+                    align-self: flex-end;
+                    margin: auto;
+                    margin-bottom: 0;
+                }
+            }
+
+            &__img {
+                flex-shrink: 0;
+
+                @include smallest {
+                    display: none;
+                }
+
+                img {
+                    height: 100%;
+                    width: 100%;
+                    object-fit: cover;
+                }
+            }
+        }
+
+        .donate {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+
+            @include medium {
+                .fatTitle {
+                    color: $dark;
+                }
+            }
+
+            .box {
+                position: relative;
+                flex-grow: 1;
+                padding: 40px;
+                padding-bottom: 100px;
+            }
+
+            h4 {
+                color: #fff;
+            }
+
+            p {
+                color: #000;
+            }
+
+            .txt-center {
+                position: absolute;
+                bottom: 40px;
+                left: 0;
+                width: 100%;
+
+                .btn {
+                    display: inline-block;
+                    margin: auto;
+                    color: #000;
+                    border-color: #fff;
+
+                    &:hover {
+                        background: #fff;
+                    }
+                }
+            }
+
+        }
     }
+
 
     .story {
 

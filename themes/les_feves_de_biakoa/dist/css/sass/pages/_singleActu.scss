@@ -1,6 +1,14 @@
 .singleActu {
     padding: 40px 90px;
 
+    @include medium {
+        padding: 40px;
+    }
+
+    @include small {
+        padding: 20px;
+    }
+
     &__infos {
         margin-bottom: 22px;
         text-align: center;
@@ -23,4 +31,113 @@
             }
         }
     }
+
+    &__content {
+
+        ul {
+
+            li {
+                padding-top: 6px;
+                padding-bottom: 6px;
+            }
+        }
+    }
+
+}
+
+.comments {
+    margin-top: 50px;
+
+    .fatTitle {
+        margin-top: 80px;
+        margin-bottom: 50px;
+    }
+
+    &__list {
+        padding: 0;
+    }
+
+    .comment {
+        display: flex;
+        margin-bottom: 30px;
+
+        &__profile {
+            position: relative;
+            z-index: 1;
+            margin-top: 20px;
+            flex-shrink: 0;
+            height: 100px;
+            width: 100px;
+            border-radius: 50%;
+            overflow: hidden;
+
+            img {
+                height: 100%;
+                width: 100%;
+                object-fit: cover;
+            }
+        }
+
+        &__text {
+            padding: 20px;
+            padding-left: 80px;
+            margin-left: -50px;
+
+            &__name {
+                margin-top: 0;
+                margin-bottom: 0;
+            }
+
+            &__specs {
+                margin-top: 0;
+                color: $dark-lighter;
+                font-size: 14px;
+            }
+        }
+    }
+
+    .comment-respond {
+
+        .fatTitle {
+            margin-bottom: 0;
+        }
+
+        .logged-in-as {
+            font-size: 14px;
+
+            a {
+                text-decoration: none;
+                color: $color;
+            }
+
+            .log-out {
+            }
+        }
+
+        label {
+            display: block;
+            font-weight: 700;
+            font-size: 18px;
+        }
+
+        .comment-form-comment {
+            margin: 30px 0;
+
+            label {
+                margin-bottom: 10px;
+            }
+
+            textarea {
+                display: block;
+                border: none;
+                width: 100%;
+            }
+        }
+
+        .form-submit {
+            text-align: right;
+        }
+
+    }
+
 }

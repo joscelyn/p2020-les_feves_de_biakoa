@@ -7,7 +7,7 @@
 
     &__text {
         padding: 42px;
-        width: 70%;
+        flex: 2;
     }
 
     &__title {
@@ -23,7 +23,11 @@
     }
 
     &__img {
-        width: 30%;
+        flex: 1;
+
+        @include smallest {
+            display: none;
+        }
 
         img {
             width: 100%;

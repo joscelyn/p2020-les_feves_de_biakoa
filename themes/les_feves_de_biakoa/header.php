@@ -14,10 +14,10 @@
 <body class="<?php if( is_front_page() ): echo 'home'; else: echo $slug = basename(get_permalink()); endif;?>" <?php body_class(); ?>>
 
 <div class="headerBackground">
-    <?php if (has_post_thumbnail()) : ?>
+    <?php if (has_post_thumbnail()): ?>
         <img src="<?php the_post_thumbnail(); ?>" alt="<?php the_post_title(); ?>">
     <?php else: ?>
-        <img src="<?= IMAGES_URL ?>/home.jpg" alt="<?php the_post_title(); ?>">
+        <img src="<?= IMAGES_URL ?>/home.jpg" alt="">
     <?php endif; ?>
 </div>
 

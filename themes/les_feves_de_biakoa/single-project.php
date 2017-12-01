@@ -86,9 +86,7 @@
             </div>
 
 
-            <div class="singleAction__live container box">
-                <?php get_template_part('templates/misc/section_comments'); ?>
-            </div>
+            <?php get_template_part('templates/misc/section_comments'); ?>
 
         <?php
             endwhile;
@@ -100,7 +98,7 @@
         <?php endif; ?>
 
 
-        <?php get_template_part( 'templates/misc/section-supportus' ); ?>
+        <?php get_template_part( 'templates/misc/section_supportus' ); ?>
     </main>
 </div>
 
